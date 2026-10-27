@@ -1,0 +1,77 @@
+{
+  "engine": "node",
+  "versions": {
+    "node": "20.19.5",
+    "acorn": "8.15.0",
+    "ada": "2.9.2",
+    "ares": "1.34.5",
+    "brotli": "1.1.0",
+    "cjs_module_lexer": "2.1.0",
+    "cldr": "47.0",
+    "icu": "77.1",
+    "llhttp": "9.3.0",
+    "modules": "115",
+    "napi": "9",
+    "nghttp2": "1.61.0",
+    "openssl": "3.0.16",
+    "simdutf": "6.4.2",
+    "tz": "2025b",
+    "undici": "6.21.2",
+    "unicode": "16.0",
+    "uv": "1.46.0",
+    "uvwasi": "0.0.21",
+    "v8": "11.3.244.8-node.30",
+    "zlib": "1.3.1-470d3a2"
+  },
+  "rows": [
+    {
+      "width": 100,
+      "rows": 30000,
+      "bytes": 26460019,
+      "metrics": {
+        "executionMs": {
+          "base": 1760.4549799999998,
+          "compact": 1771.2765880000002,
+          "medianPairedReduction": -1.0479484193428146,
+          "min": -1.7376306322812285,
+          "max": 3.6970522290656005
+        },
+        "responseMs": {
+          "base": 2086.611105,
+          "compact": 2089.2872230000003,
+          "medianPairedReduction": -0.12825188141611932,
+          "min": -1.2535565051964515,
+          "max": 2.8560324024406336
+        },
+        "cpuMs": {
+          "base": 2138.98,
+          "compact": 2131.282,
+          "medianPairedReduction": 0.35989116307771907,
+          "min": -2.24020420718567,
+          "max": 2.8354702755975736
+        },
+        "addedHeap": {
+          "base": 273615232,
+          "compact": 271100912,
+          "medianPairedReduction": 0.8949018407671039,
+          "min": 0.7794587248182383,
+          "max": 1.03137240546608
+        },
+        "retainedOutputHeap": {
+          "base": 187285888,
+          "compact": 187285920,
+          "medianPairedReduction": -0.000034172355789507947,
+          "min": -0.00016231909909514286,
+          "max": 0.000004271543563305613
+        },
+        "peakRss": {
+          "base": 379830272,
+          "compact": 381190144,
+          "medianPairedReduction": -0.3580209636371512,
+          "min": -0.5080138921845778,
+          "max": 0.17143966186491388
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+
+> graphql@16.14.2 check:integrations
+> npm run build:npm && npm run build:deno && mocha --full-trace integrationTests/*-test.js
+
+
+> graphql@16.14.2 build:npm
+> node resources/build-npm.js
+
+   *.js x133 | 843.99 KB
+  *.mjs x133 | 753.35 KB
+ *.d.ts x134 | 460.51 KB
+   README.md |   8.31 KB
+     LICENSE |   1.05 KB
+package.json |   0.71 KB
+------------------------
+       Total |   2.02 MB
+
+> graphql@16.14.2 build:deno
+> node resources/build-deno.js
+
+*.ts x133 | 918.10 KB
+README.md |   8.31 KB
+  LICENSE |   1.05 KB
+---------------------
+    Total |   0.91 MB
+
+
+  Integration Tests
+
+added 7 packages, and audited 8 packages in 6s
+
+found 0 vulnerabilities
+
+> test
+> node test.js
+
+Testing on typescript-4.6 ...
+Testing on typescript-4.5 ...
+Testing on typescript-4.4 ...
+Testing on typescript-4.3 ...
+Testing on typescript-4.2 ...
+Testing on typescript-4.1 ...
+    ✔ graphql-js should compile with all supported TS versions (11966ms)
+
+added 1 package, and audited 2 packages in 1s
+
+found 0 vulnerabilities
+
+> test
+> node test.js
+
+Testing on node@17.0.0 ...
+
+The command 'docker' could not be found in this WSL 2 distro.
+We recommend to activate the WSL integration in Docker Desktop settings.
+
+For details about using Docker Desktop with WSL 2, visit:
+
+https://docs.docker.com/go/wsl2/
+
+node:child_process:966
+    throw err;
+    ^
+
+Error: Command failed: docker run --rm --volume "$PWD":/usr/src/app -w /usr/src/app node:17.0.0-slim node ./index.js
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:891:11)
+    at Object.execSync (node:child_process:963:15)
+    at Object.<anonymous> (/tmp/graphql-js-integrationTmp/node/test.js:15:16)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12) {
+  status: 1,
+  signal: null,
+  output: [ null, null, null ],
+  pid: 398,
+  stdout: null,
+  stderr: null
+}
+
+Node.js v20.19.5
+    1) graphql-js should work on all supported node versions
+
+added 106 packages, and audited 107 packages in 5s
+
+17 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+> test
+> webpack && node test.js
+
+asset main.js 141 KiB [emitted] [minimized] (name: main)
+orphan modules 744 KiB [orphan] 127 modules
+runtime modules 403 bytes 2 modules
+cacheable modules 643 KiB
+  ./entry.js 263 bytes [built] [code generated]
+  ./node_modules/graphql/index.mjs + 100 modules 643 KiB [built] [code generated]
+webpack 5.112.2 compiled successfully in 2343 ms
+Test script: Got correct result from Webpack bundle!
+    ✔ graphql-js should be compatible with Webpack (8415ms)
+
+
+  2 passing (22s)
+  1 failing
+
+  1) Integration Tests
+       graphql-js should work on all supported node versions:
+     Error: Command failed: npm --quiet test
+      at genericNodeError (node:internal/errors:984:15)
+      at wrappedFn (node:internal/errors:538:14)
+      at checkExecSyncError (node:child_process:891:11)
+      at Object.execSync (node:child_process:963:15)
+      at exec (/tmp/codex-graphql-v16/pr/integrationTests/integration-test.js:11:31)
+      at Context.<anonymous> (/tmp/codex-graphql-v16/pr/integrationTests/integration-test.js:42:7)
+      at callFn (/tmp/codex-graphql-v16/pr/node_modules/mocha/lib/runnable.js:366:21)
+      at Runnable.run (/tmp/codex-graphql-v16/pr/node_modules/mocha/lib/runnable.js:354:5)
+      at Runner.runTest (/tmp/codex-graphql-v16/pr/node_modules/mocha/lib/runner.js:678:10)
+      at /tmp/codex-graphql-v16/pr/node_modules/mocha/lib/runner.js:801:12
+      at next (/tmp/codex-graphql-v16/pr/node_modules/mocha/lib/runner.js:593:14)
+      at /tmp/codex-graphql-v16/pr/node_modules/mocha/lib/runner.js:603:7
+      at next (/tmp/codex-graphql-v16/pr/node_modules/mocha/lib/runner.js:486:14)
+      at Immediate._onImmediate (/tmp/codex-graphql-v16/pr/node_modules/mocha/lib/runner.js:571:5)
+      at process.processImmediate (node:internal/timers:483:21)
+
+
+

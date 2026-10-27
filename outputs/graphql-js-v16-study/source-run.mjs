@@ -1,0 +1,30 @@
+import { spawnSync } from 'node:child_process';
+import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { freemem } from 'node:os';
+import { resolve } from 'node:path';
+import assert from 'node:assert/strict';
+const [baseDir, candidateDir, bytesArg, repsArg, tag, asyncArg = 'false'] = process.argv.slice(2);
+const bytes = +bytesArg, reps = +repsArg, async = asyncArg === 'true';
+assert([3000000, 25000000, 100000000].includes(bytes)); assert(reps > 0 && reps <= 5); assert(/^[a-z0-9-]+$/.test(tag));
+const out = resolve('outputs/graphql-js-v16-study');
+const fixture = resolve(bytes === 3000000 ? 'outputs/graphql-js-study/dense-3000000.json' : `work/fixtures/dense-${bytes}.json`);
+const path = `${out}/${tag}.json`; assert(!existsSync(path));
+const sha = p => createHash('sha256').update(readFileSync(p)).digest('hex');
+const files = [out + '/source-run.mjs', out + '/source-case.mjs', ...[baseDir, candidateDir].flatMap(dir => ['src/execution/execute.ts', 'src/jsutils/promiseForObject.ts', 'npmDist/execution/execute.js', 'npmDist/jsutils/promiseForObject.js'].map(p => `${dir}/${p}`)), `${candidateDir}/src/jsutils/CompactExecutionResultMap.ts`, `${candidateDir}/npmDist/jsutils/CompactExecutionResultMap.js`];
+const identity = () => Object.fromEntries(files.map(p => [p, sha(p)]));
+const report = { bytes, reps, async, node: process.versions, source: identity(), fixtureSha: sha(fixture), events: [], startedAt: new Date().toISOString() };
+const save = () => writeFileSync(path, JSON.stringify(report, null, 2)); save();
+const env = { ...process.env }; delete env.NODE_OPTIONS; delete env.NODE_V8_COVERAGE;
+for (let rep = 0; rep < reps; rep++) for (const variant of rep % 2 ? ['compact', 'base'] : ['base', 'compact']) {
+  assert(freemem() > 6500000000); assert.deepEqual(identity(), report.source);
+  const output = `${out}/${tag}-r${rep}-${variant}`;
+  const c = { variant, fixture, async, output, modulePath: `${variant === 'base' ? baseDir : candidateDir}/npmDist/index.js` };
+  const child = spawnSync(process.execPath, ['--expose-gc', '--max-old-space-size=2813', '--max-semi-space-size=16', out + '/source-case.mjs', JSON.stringify(c)], { env, encoding: 'utf8', timeout: 240000, maxBuffer: 4 * 1048576 });
+  writeFileSync(output + '.log', child.stdout + '\nSTDERR\n' + child.stderr);
+  assert.equal(child.status, 0, child.stderr || child.error?.message);
+  const r = JSON.parse(readFileSync(output + '.json')); assert.equal(r.bytes, bytes); assert.equal(r.sha256, report.fixtureSha);
+  const event = { rep, variant, idleHeap: r.idleHeap, inputReadyHeap: r.inputReadyHeap, executionAddedHeap: r.executionAddedHeap, peakHeap: r.peakHeap, addedHeap: r.addedHeap, peakRss: r.peakRss, cpuMs: (r.responseCpu.user + r.responseCpu.system) / 1000, wallMs: r.responseMs, executionMs: r.executionMs, postGCHeap: r.stages.at(-1).heapUsed, outputRows: r.outputRows, sha256: r.sha256 };
+  report.events.push(event); save(); console.log(JSON.stringify(event));
+}
+report.completedAt = new Date().toISOString(); save();

@@ -1,0 +1,15 @@
+
+> graphql@16.14.2 fuzzonly
+> mocha --full-trace src/**/__tests__/**/*-fuzz.ts
+
+
+
+  printBlockString
+    ✔ correctly print random strings (2767ms)
+
+  stripIgnoredCharacters
+    ✔ strips ignored characters inside random block strings (5012ms)
+
+
+  2 passing (8s)
+

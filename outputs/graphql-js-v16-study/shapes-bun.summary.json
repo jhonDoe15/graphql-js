@@ -1,0 +1,227 @@
+{
+  "engine": "bun",
+  "versions": {
+    "node": "24.3.0",
+    "bun": "1.2.18",
+    "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+    "openssl": "1.1.0",
+    "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+    "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+    "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+    "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+    "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+    "zig": "0.14.1",
+    "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+    "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+    "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+    "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+    "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+    "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+    "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+    "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+    "v8": "13.6.233.10-node.18",
+    "uv": "1.48.0",
+    "napi": "10",
+    "icu": "75.1",
+    "unicode": "15.1",
+    "modules": "137"
+  },
+  "rows": [
+    {
+      "width": 1,
+      "rows": 100000,
+      "bytes": 900019,
+      "metrics": {
+        "executionMs": {
+          "base": 86.17749700000002,
+          "compact": 88.57651200000001,
+          "medianPairedReduction": -1.3508247982648713,
+          "min": -22.402533771542643,
+          "max": 7.384175782060376
+        },
+        "responseMs": {
+          "base": 101.13358300000002,
+          "compact": 103.50269800000001,
+          "medianPairedReduction": -1.1028057811419245,
+          "min": -22.822385901093533,
+          "max": 13.570016321853384
+        },
+        "cpuMs": {
+          "base": 201.039,
+          "compact": 200.964,
+          "medianPairedReduction": 1.0408929446659276,
+          "min": -18.60233098324924,
+          "max": 7.901986137993622
+        },
+        "addedHeap": {
+          "base": 13313835,
+          "compact": 13208502,
+          "medianPairedReduction": 1.0196199794369587,
+          "min": 0.7538457627146666,
+          "max": 7.926406619938842
+        },
+        "retainedOutputHeap": {
+          "base": 14987834,
+          "compact": 14992904,
+          "medianPairedReduction": 0.00846686719375711,
+          "min": -0.10945386305809546,
+          "max": 7.423342561173452
+        },
+        "peakRss": {
+          "base": 120385536,
+          "compact": 120213504,
+          "medianPairedReduction": -0.10207206287640158,
+          "min": -0.6856630947869036,
+          "max": 0.46462728074340154
+        }
+      }
+    },
+    {
+      "width": 8,
+      "rows": 100000,
+      "bytes": 5800019,
+      "metrics": {
+        "executionMs": {
+          "base": 379.847893,
+          "compact": 377.351627,
+          "medianPairedReduction": -3.097484636801906,
+          "min": -50.75541301816591,
+          "max": 2.9490133304490795
+        },
+        "responseMs": {
+          "base": 458.44004599999994,
+          "compact": 465.42243999999994,
+          "medianPairedReduction": -2.0527388675904534,
+          "min": -38.60909918041875,
+          "max": 3.0700810548299984
+        },
+        "cpuMs": {
+          "base": 571.898,
+          "compact": 576.87,
+          "medianPairedReduction": -3.0285520694133483,
+          "min": -38.15288564032284,
+          "max": 2.684919338763214
+        },
+        "addedHeap": {
+          "base": 25949841,
+          "compact": 20147147,
+          "medianPairedReduction": -0.0250637373847562,
+          "min": -0.04173547682373435,
+          "max": 22.45846580541071
+        },
+        "retainedOutputHeap": {
+          "base": 25951700,
+          "compact": 25956345,
+          "medianPairedReduction": -0.0250637373847562,
+          "min": -67.44525517305364,
+          "max": 40.278226665018714
+        },
+        "peakRss": {
+          "base": 145256448,
+          "compact": 144699392,
+          "medianPairedReduction": 0.38349829399656477,
+          "min": -2.7695294655093683,
+          "max": 3.85760845133738
+        }
+      }
+    },
+    {
+      "width": 32,
+      "rows": 31250,
+      "bytes": 8437519,
+      "metrics": {
+        "executionMs": {
+          "base": 411.900027,
+          "compact": 433.310474,
+          "medianPairedReduction": -4.916269514389526,
+          "min": -16.38833901276908,
+          "max": 18.476893337837474
+        },
+        "responseMs": {
+          "base": 517.898955,
+          "compact": 530.388641,
+          "medianPairedReduction": -5.101656681716182,
+          "min": -13.13649018757359,
+          "max": 15.207789760331547
+        },
+        "cpuMs": {
+          "base": 588.448,
+          "compact": 611.999,
+          "medianPairedReduction": -4.8942186172377555,
+          "min": -14.435559870491987,
+          "max": 15.841215501573558
+        },
+        "addedHeap": {
+          "base": 20201563,
+          "compact": 20194724,
+          "medianPairedReduction": 0.01178621673976199,
+          "min": -0.15833399799165537,
+          "max": 0.09428352023156394
+        },
+        "retainedOutputHeap": {
+          "base": 28786387,
+          "compact": 28798204,
+          "medianPairedReduction": -0.02062924440451308,
+          "min": -0.11665424732201224,
+          "max": 0.009980411921783894
+        },
+        "peakRss": {
+          "base": 157310976,
+          "compact": 159465472,
+          "medianPairedReduction": -1.2862573556215118,
+          "min": -4.410488388606892,
+          "max": -0.5603181160917181
+        }
+      }
+    },
+    {
+      "width": 100,
+      "rows": 10000,
+      "bytes": 8820019,
+      "metrics": {
+        "executionMs": {
+          "base": 483.05501599999997,
+          "compact": 520.46982,
+          "medianPairedReduction": -9.350798955069317,
+          "min": -15.853298872961386,
+          "max": 14.315924732366325
+        },
+        "responseMs": {
+          "base": 585.5236849999999,
+          "compact": 623.491677,
+          "medianPairedReduction": -6.444137449497767,
+          "min": -16.598855608050876,
+          "max": 14.585750350055516
+        },
+        "cpuMs": {
+          "base": 637.113,
+          "compact": 682.951,
+          "medianPairedReduction": -6.995802894263958,
+          "min": -16.015119708180812,
+          "max": 14.556145274523857
+        },
+        "addedHeap": {
+          "base": 73263334,
+          "compact": 73268423,
+          "medianPairedReduction": 0.014123015393963101,
+          "min": -37.19575246140319,
+          "max": 0.09984257609679803
+        },
+        "retainedOutputHeap": {
+          "base": 52903355,
+          "compact": 52916632,
+          "medianPairedReduction": 0.029654073924045843,
+          "min": -0.31206625795057175,
+          "max": 0.24221833651530966
+        },
+        "peakRss": {
+          "base": 217186304,
+          "compact": 218546176,
+          "medianPairedReduction": -0.563792023386922,
+          "min": -1.508682038144027,
+          "max": -0.3639861194930649
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+
+
+  2014 passing (3s)
+
+PASS v12.22.12 /tmp/codex-graphql-v16/pr/npmDist/index.js sync + async result maps
+PASS v12.22.12 /tmp/codex-graphql-v16/pr/npmDist/index.mjs sync + async result maps
+PASS v20.19.5 /tmp/codex-graphql-v16/pr/npmDist/index.js sync + async result maps
+PASS v20.19.5 /tmp/codex-graphql-v16/pr/npmDist/index.mjs sync + async result maps
+
+  2012 passing (3s)
+
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------|---------|----------|---------|---------|-------------------
+All files |       0 |        0 |       0 |       0 |                   
+----------|---------|----------|---------|---------|-------------------

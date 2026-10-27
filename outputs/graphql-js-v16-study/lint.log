@@ -1,0 +1,4 @@
+
+> graphql@16.14.2 lint
+> eslint --cache --max-warnings 0 .
+

@@ -1,0 +1,3417 @@
+{
+  "engine": "bun",
+  "executable": "/tmp/codex-graphql-4919/tools/node_modules/.bin/bun",
+  "source": {
+    "/mnt/c/Users/noamy/Documents/Codex/2026-10-23/graphql-memory-investigation/outputs/graphql-js-v16-study/shape-case.mjs": "9d752caaa5e50ea633e2066bb690532d0b487bda1651bfabd5d54c8dc3fdb83d",
+    "/mnt/c/Users/noamy/Documents/Codex/2026-10-23/graphql-memory-investigation/outputs/graphql-js-v16-study/shape-run.mjs": "59bfa91e9cd7e3ac3779680047f82eb0503470d582148d2a9be04f5a0ac4f800",
+    "/tmp/codex-graphql-v16/base/npmDist/execution/execute.js": "71e86073d87994dca6b35ae55bfff7514b2f1ea479cd7ee7c88d7e2d508fde1d",
+    "/tmp/codex-graphql-v16/base/npmDist/jsutils/promiseForObject.js": "96f967e08f9a43999c7aab287352b4ba4eb734fff5e6050ad14618eee0c10565",
+    "/tmp/codex-graphql-v16/pr/npmDist/execution/execute.js": "74d248af543fcf153b4a1e241e9b5040cb2ee540658e2a967e222262b0c28874",
+    "/tmp/codex-graphql-v16/pr/npmDist/jsutils/promiseForObject.js": "651cd7d0d97def041e7898a15b2ae082dd52c7695e21c71949887fcffd8bb619",
+    "/tmp/codex-graphql-v16/pr/npmDist/jsutils/CompactExecutionResultMap.js": "a4755aa52ae3f73d9fdd23a96c6f4c0564d7668f148570b1e9803b8b42208732"
+  },
+  "startedAt": "2026-10-27T12:04:56.507Z",
+  "events": [
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 0,
+        "variant": "base",
+        "modulePath": "/tmp/codex-graphql-v16/base/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 69218304,
+        "heapTotal": 3666944,
+        "heapUsed": 4133187,
+        "external": 1992495,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 75689984,
+        "heapTotal": 10171392,
+        "heapUsed": 4133187,
+        "external": 2002970,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 114802688,
+        "heapTotal": 38712320,
+        "heapUsed": 17146918,
+        "external": 2056870,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 117420032,
+        "heapTotal": 38730752,
+        "heapUsed": 17146918,
+        "external": 2956985,
+        "arrayBuffers": 900115
+      },
+      "retained": {
+        "rss": 118816768,
+        "heapTotal": 22412288,
+        "heapUsed": 18945346,
+        "external": 2010671,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 110231552,
+        "heapTotal": 3734528,
+        "heapUsed": 18945346,
+        "external": 2057946,
+        "arrayBuffers": 0
+      },
+      "executionMs": 101.39578499999999,
+      "responseMs": 128.24524000000002,
+      "cpuMs": 249.026,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 13013731,
+      "retainedOutputHeap": 14812159,
+      "peakRss": 118878208
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 0,
+        "variant": "compact",
+        "modulePath": "/tmp/codex-graphql-v16/pr/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 70283264,
+        "heapTotal": 3683328,
+        "heapUsed": 4130677,
+        "external": 1993066,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 76664832,
+        "heapTotal": 10155008,
+        "heapUsed": 4130677,
+        "external": 2007725,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 116826112,
+        "heapTotal": 38827008,
+        "heapUsed": 16990897,
+        "external": 2048593,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 118476800,
+        "heapTotal": 38845440,
+        "heapUsed": 16990897,
+        "external": 2948708,
+        "arrayBuffers": 900115
+      },
+      "retained": {
+        "rss": 119062528,
+        "heapTotal": 22297600,
+        "heapUsed": 18940989,
+        "external": 2015298,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 103129088,
+        "heapTotal": 3718144,
+        "heapUsed": 18940989,
+        "external": 2062573,
+        "arrayBuffers": 0
+      },
+      "executionMs": 93.90854199999998,
+      "responseMs": 110.84233999999998,
+      "cpuMs": 229.348,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 12860220,
+      "retainedOutputHeap": 14810312,
+      "peakRss": 119693312
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 1,
+        "variant": "compact",
+        "modulePath": "/tmp/codex-graphql-v16/pr/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 69513216,
+        "heapTotal": 3666944,
+        "heapUsed": 4138345,
+        "external": 1996261,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 76509184,
+        "heapTotal": 10171392,
+        "heapUsed": 4138345,
+        "external": 2008094,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 116363264,
+        "heapTotal": 38417408,
+        "heapUsed": 17398602,
+        "external": 2062650,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 118370304,
+        "heapTotal": 38435840,
+        "heapUsed": 17398602,
+        "external": 2962765,
+        "arrayBuffers": 900115
+      },
+      "retained": {
+        "rss": 120045568,
+        "heapTotal": 22412288,
+        "heapUsed": 19124910,
+        "external": 2014671,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 120315904,
+        "heapTotal": 3734528,
+        "heapUsed": 19124910,
+        "external": 2061946,
+        "arrayBuffers": 0
+      },
+      "executionMs": 88.57651200000001,
+      "responseMs": 103.50269800000001,
+      "cpuMs": 200.645,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 13260257,
+      "retainedOutputHeap": 14986565,
+      "peakRss": 120315904
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 1,
+        "variant": "base",
+        "modulePath": "/tmp/codex-graphql-v16/base/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 69455872,
+        "heapTotal": 3683328,
+        "heapUsed": 4129068,
+        "external": 1993104,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 75853824,
+        "heapTotal": 10171392,
+        "heapUsed": 4129068,
+        "external": 2004942,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 115507200,
+        "heapTotal": 38253568,
+        "heapUsed": 17525922,
+        "external": 2063186,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 117063680,
+        "heapTotal": 38272000,
+        "heapUsed": 17525922,
+        "external": 2963301,
+        "arrayBuffers": 900115
+      },
+      "retained": {
+        "rss": 119222272,
+        "heapTotal": 22526976,
+        "heapUsed": 19116902,
+        "external": 2011533,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 120557568,
+        "heapTotal": 3734528,
+        "heapUsed": 19116902,
+        "external": 2058808,
+        "arrayBuffers": 0
+      },
+      "executionMs": 86.275398,
+      "responseMs": 103.013495,
+      "cpuMs": 201.039,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 13396854,
+      "retainedOutputHeap": 14987834,
+      "peakRss": 120557568
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 2,
+        "variant": "base",
+        "modulePath": "/tmp/codex-graphql-v16/base/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 70041600,
+        "heapTotal": 3666944,
+        "heapUsed": 4125516,
+        "external": 1992705,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 76308480,
+        "heapTotal": 10155008,
+        "heapUsed": 4125516,
+        "external": 2004538,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 116232192,
+        "heapTotal": 38499328,
+        "heapUsed": 17420278,
+        "external": 2059878,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 118046720,
+        "heapTotal": 38517760,
+        "heapUsed": 17420278,
+        "external": 2959993,
+        "arrayBuffers": 900115
+      },
+      "retained": {
+        "rss": 120233984,
+        "heapTotal": 22412288,
+        "heapUsed": 19118074,
+        "external": 2011575,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 120774656,
+        "heapTotal": 3718144,
+        "heapUsed": 19118074,
+        "external": 2058850,
+        "arrayBuffers": 0
+      },
+      "executionMs": 81.236369,
+      "responseMs": 96.17585599999998,
+      "cpuMs": 195.454,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 13294762,
+      "retainedOutputHeap": 14992558,
+      "peakRss": 120774656
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 2,
+        "variant": "compact",
+        "modulePath": "/tmp/codex-graphql-v16/pr/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 69627904,
+        "heapTotal": 3683328,
+        "heapUsed": 4135973,
+        "external": 1995882,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 76165120,
+        "heapTotal": 10171392,
+        "heapUsed": 4135973,
+        "external": 2007725,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 115949568,
+        "heapTotal": 38024192,
+        "heapUsed": 17330513,
+        "external": 2060337,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 117739520,
+        "heapTotal": 38042624,
+        "heapUsed": 17330513,
+        "external": 2960452,
+        "arrayBuffers": 900115
+      },
+      "retained": {
+        "rss": 119943168,
+        "heapTotal": 22215680,
+        "heapUsed": 19128877,
+        "external": 2013502,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 104910848,
+        "heapTotal": 15678464,
+        "heapUsed": 19128877,
+        "external": 2038765,
+        "arrayBuffers": 0
+      },
+      "executionMs": 99.435374,
+      "responseMs": 118.12548100000001,
+      "cpuMs": 231.813,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 13194540,
+      "retainedOutputHeap": 14992904,
+      "peakRss": 120213504
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 3,
+        "variant": "compact",
+        "modulePath": "/tmp/codex-graphql-v16/pr/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 69857280,
+        "heapTotal": 3650560,
+        "heapUsed": 4141241,
+        "external": 1996234,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 76812288,
+        "heapTotal": 10155008,
+        "heapUsed": 4141241,
+        "external": 2008067,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 116686848,
+        "heapTotal": 38401024,
+        "heapUsed": 17394175,
+        "external": 2061967,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 118325248,
+        "heapTotal": 38419456,
+        "heapUsed": 17394175,
+        "external": 2962082,
+        "arrayBuffers": 900115
+      },
+      "retained": {
+        "rss": 119136256,
+        "heapTotal": 22346752,
+        "heapUsed": 19139227,
+        "external": 2017164,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 119713792,
+        "heapTotal": 3718144,
+        "heapUsed": 19139227,
+        "external": 2064439,
+        "arrayBuffers": 0
+      },
+      "executionMs": 87.34160399999999,
+      "responseMs": 102.24888999999999,
+      "cpuMs": 200.964,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 13252934,
+      "retainedOutputHeap": 14997986,
+      "peakRss": 120508416
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 3,
+        "variant": "base",
+        "modulePath": "/tmp/codex-graphql-v16/base/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 70172672,
+        "heapTotal": 3666944,
+        "heapUsed": 4129228,
+        "external": 1990464,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 76439552,
+        "heapTotal": 10155008,
+        "heapUsed": 4129228,
+        "external": 2002305,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 116850688,
+        "heapTotal": 39236608,
+        "heapUsed": 18523077,
+        "external": 2058197,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 119033856,
+        "heapTotal": 39255040,
+        "heapUsed": 18523077,
+        "external": 2958312,
+        "arrayBuffers": 900115
+      },
+      "retained": {
+        "rss": 120385536,
+        "heapTotal": 22510592,
+        "heapUsed": 20329841,
+        "external": 2013066,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 120385536,
+        "heapTotal": 3718144,
+        "heapUsed": 20329841,
+        "external": 2060341,
+        "arrayBuffers": 0
+      },
+      "executionMs": 86.17749700000002,
+      "responseMs": 101.13358300000002,
+      "cpuMs": 207.671,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 14393849,
+      "retainedOutputHeap": 16200613,
+      "peakRss": 120385536
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 4,
+        "variant": "base",
+        "modulePath": "/tmp/codex-graphql-v16/base/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 69312512,
+        "heapTotal": 3666944,
+        "heapUsed": 4131660,
+        "external": 1993338,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 75481088,
+        "heapTotal": 10155008,
+        "heapUsed": 4131660,
+        "external": 2005171,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 116006912,
+        "heapTotal": 38663168,
+        "heapUsed": 17445495,
+        "external": 2057495,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 117592064,
+        "heapTotal": 38681600,
+        "heapUsed": 17445495,
+        "external": 2957610,
+        "arrayBuffers": 900115
+      },
+      "retained": {
+        "rss": 119209984,
+        "heapTotal": 22461440,
+        "heapUsed": 19117883,
+        "external": 2011524,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 119517184,
+        "heapTotal": 3718144,
+        "heapUsed": 19117883,
+        "external": 2058799,
+        "arrayBuffers": 0
+      },
+      "executionMs": 84.76578900000001,
+      "responseMs": 100.00027700000001,
+      "cpuMs": 197.907,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 13313835,
+      "retainedOutputHeap": 14986223,
+      "peakRss": 119517184
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 4,
+        "variant": "compact",
+        "modulePath": "/tmp/codex-graphql-v16/pr/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 69861376,
+        "heapTotal": 3666944,
+        "heapUsed": 4132701,
+        "external": 1994870,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 75591680,
+        "heapTotal": 10155008,
+        "heapUsed": 4132701,
+        "external": 2006703,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 114806784,
+        "heapTotal": 37630976,
+        "heapUsed": 17341203,
+        "external": 2064531,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 116396032,
+        "heapTotal": 37649408,
+        "heapUsed": 17341203,
+        "external": 2964646,
+        "arrayBuffers": 900115
+      },
+      "retained": {
+        "rss": 118013952,
+        "heapTotal": 22133760,
+        "heapUsed": 19135327,
+        "external": 2018964,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 119926784,
+        "heapTotal": 3718144,
+        "heapUsed": 19135327,
+        "external": 2066239,
+        "arrayBuffers": 0
+      },
+      "executionMs": 85.77409499999999,
+      "responseMs": 101.406385,
+      "cpuMs": 195.847,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 13208502,
+      "retainedOutputHeap": 15002626,
+      "peakRss": 119926784
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 0,
+        "variant": "base",
+        "modulePath": "/tmp/codex-graphql-v16/base/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 87969792,
+        "heapTotal": 3765248,
+        "heapUsed": 4208790,
+        "external": 2054592,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 93077504,
+        "heapTotal": 13399040,
+        "heapUsed": 14671993,
+        "external": 2065397,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 119271424,
+        "heapTotal": 43676672,
+        "heapUsed": 23875289,
+        "external": 2088921,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 141938688,
+        "heapTotal": 43695104,
+        "heapUsed": 30171494,
+        "external": 13695689,
+        "arrayBuffers": 5800115
+      },
+      "retained": {
+        "rss": 126656512,
+        "heapTotal": 32537600,
+        "heapUsed": 30171494,
+        "external": 2076440,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 128815104,
+        "heapTotal": 3734528,
+        "heapUsed": 30171494,
+        "external": 2123722,
+        "arrayBuffers": 0
+      },
+      "executionMs": 379.847893,
+      "responseMs": 458.44004599999994,
+      "cpuMs": 571.898,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 25962704,
+      "retainedOutputHeap": 15499501,
+      "peakRss": 143458304
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 0,
+        "variant": "compact",
+        "modulePath": "/tmp/codex-graphql-v16/pr/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 87257088,
+        "heapTotal": 3994624,
+        "heapUsed": 4221703,
+        "external": 2056635,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 93085696,
+        "heapTotal": 13415424,
+        "heapUsed": 4221703,
+        "external": 2062722,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 120156160,
+        "heapTotal": 43791360,
+        "heapUsed": 24353582,
+        "external": 2086686,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 144936960,
+        "heapTotal": 43809792,
+        "heapUsed": 24353582,
+        "external": 7886801,
+        "arrayBuffers": 5800115
+      },
+      "retained": {
+        "rss": 145285120,
+        "heapTotal": 32570368,
+        "heapUsed": 30174882,
+        "external": 2075477,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 147431424,
+        "heapTotal": 3734528,
+        "heapUsed": 30174882,
+        "external": 2122763,
+        "arrayBuffers": 0
+      },
+      "executionMs": 368.64612800000003,
+      "responseMs": 444.365565,
+      "cpuMs": 556.543,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 20131879,
+      "retainedOutputHeap": 25953179,
+      "peakRss": 147431424
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 1,
+        "variant": "compact",
+        "modulePath": "/tmp/codex-graphql-v16/pr/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 88838144,
+        "heapTotal": 3994624,
+        "heapUsed": 4223414,
+        "external": 2057034,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 93782016,
+        "heapTotal": 13415424,
+        "heapUsed": 4223414,
+        "external": 2066350,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 118140928,
+        "heapTotal": 43611136,
+        "heapUsed": 23887106,
+        "external": 2091250,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 142884864,
+        "heapTotal": 43629568,
+        "heapUsed": 30179759,
+        "external": 13698018,
+        "arrayBuffers": 5800115
+      },
+      "retained": {
+        "rss": 138821632,
+        "heapTotal": 32488448,
+        "heapUsed": 30179759,
+        "external": 2079097,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 140169216,
+        "heapTotal": 3750912,
+        "heapUsed": 30179759,
+        "external": 2126379,
+        "arrayBuffers": 0
+      },
+      "executionMs": 359.64800399999996,
+      "responseMs": 436.57883899999996,
+      "cpuMs": 547.401,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 25956345,
+      "retainedOutputHeap": 25956345,
+      "peakRss": 143818752
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 1,
+        "variant": "base",
+        "modulePath": "/tmp/codex-graphql-v16/base/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 87830528,
+        "heapTotal": 3961856,
+        "heapUsed": 4216273,
+        "external": 2057048,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 93069312,
+        "heapTotal": 13399040,
+        "heapUsed": 4216273,
+        "external": 2064857,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 120176640,
+        "heapTotal": 43725824,
+        "heapUsed": 23868949,
+        "external": 2089317,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 144912384,
+        "heapTotal": 43744256,
+        "heapUsed": 30166114,
+        "external": 13696085,
+        "arrayBuffers": 5800115
+      },
+      "retained": {
+        "rss": 140435456,
+        "heapTotal": 32553984,
+        "heapUsed": 30166114,
+        "external": 2077362,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 142053376,
+        "heapTotal": 3734528,
+        "heapUsed": 30166114,
+        "external": 2124644,
+        "arrayBuffers": 0
+      },
+      "executionMs": 350.132338,
+      "responseMs": 427.797278,
+      "cpuMs": 531.31,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 25949841,
+      "retainedOutputHeap": 25949841,
+      "peakRss": 145432576
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 2,
+        "variant": "base",
+        "modulePath": "/tmp/codex-graphql-v16/base/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 87740416,
+        "heapTotal": 3978240,
+        "heapUsed": 4218861,
+        "external": 2056023,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 92504064,
+        "heapTotal": 13399040,
+        "heapUsed": 4218861,
+        "external": 2063810,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 120139776,
+        "heapTotal": 43414528,
+        "heapUsed": 23898462,
+        "external": 2088270,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 144875520,
+        "heapTotal": 43432960,
+        "heapUsed": 30170561,
+        "external": 13690820,
+        "arrayBuffers": 5800115
+      },
+      "retained": {
+        "rss": 139264000,
+        "heapTotal": 32259072,
+        "heapUsed": 30170561,
+        "external": 2076561,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 140611584,
+        "heapTotal": 3734528,
+        "heapUsed": 30170561,
+        "external": 2123843,
+        "arrayBuffers": 0
+      },
+      "executionMs": 355.578476,
+      "responseMs": 433.994622,
+      "cpuMs": 541.171,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 25951700,
+      "retainedOutputHeap": 25951700,
+      "peakRss": 145256448
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 2,
+        "variant": "compact",
+        "modulePath": "/tmp/codex-graphql-v16/pr/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 88625152,
+        "heapTotal": 3994624,
+        "heapUsed": 4223774,
+        "external": 2060307,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 93208576,
+        "heapTotal": 13415424,
+        "heapUsed": 4223774,
+        "external": 2069618,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 119840768,
+        "heapTotal": 43758592,
+        "heapUsed": 23888462,
+        "external": 2093550,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 143294464,
+        "heapTotal": 43777024,
+        "heapUsed": 30183227,
+        "external": 13700318,
+        "arrayBuffers": 5800115
+      },
+      "retained": {
+        "rss": 139976704,
+        "heapTotal": 32521216,
+        "heapUsed": 30183227,
+        "external": 2080633,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 141594624,
+        "heapTotal": 3750912,
+        "heapUsed": 30183227,
+        "external": 2127915,
+        "arrayBuffers": 0
+      },
+      "executionMs": 377.351627,
+      "responseMs": 465.42243999999994,
+      "cpuMs": 576.87,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 25959453,
+      "retainedOutputHeap": 25959453,
+      "peakRss": 144699392
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 3,
+        "variant": "compact",
+        "modulePath": "/tmp/codex-graphql-v16/pr/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 87588864,
+        "heapTotal": 3978240,
+        "heapUsed": 4227166,
+        "external": 2060316,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 92827648,
+        "heapTotal": 13399040,
+        "heapUsed": 4227166,
+        "external": 2066381,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 119676928,
+        "heapTotal": 43873280,
+        "heapUsed": 24374313,
+        "external": 2090281,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 144351232,
+        "heapTotal": 43891712,
+        "heapUsed": 24374313,
+        "external": 7890396,
+        "arrayBuffers": 5800115
+      },
+      "retained": {
+        "rss": 144224256,
+        "heapTotal": 32603136,
+        "heapUsed": 30192637,
+        "external": 2079072,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 146370560,
+        "heapTotal": 3718144,
+        "heapUsed": 30192637,
+        "external": 2126354,
+        "arrayBuffers": 0
+      },
+      "executionMs": 410.128155,
+      "responseMs": 493.861038,
+      "cpuMs": 603.162,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 20147147,
+      "retainedOutputHeap": 25965471,
+      "peakRss": 146370560
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 3,
+        "variant": "base",
+        "modulePath": "/tmp/codex-graphql-v16/base/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 87461888,
+        "heapTotal": 3978240,
+        "heapUsed": 4217742,
+        "external": 2056023,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 92917760,
+        "heapTotal": 13399040,
+        "heapUsed": 4217742,
+        "external": 2062088,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 118112256,
+        "heapTotal": 43824128,
+        "heapUsed": 24356484,
+        "external": 2086548,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 140386304,
+        "heapTotal": 43842560,
+        "heapUsed": 24356484,
+        "external": 7886663,
+        "arrayBuffers": 5800115
+      },
+      "retained": {
+        "rss": 142004224,
+        "heapTotal": 32586752,
+        "heapUsed": 30178648,
+        "external": 2076565,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 132440064,
+        "heapTotal": 3718144,
+        "heapUsed": 30178648,
+        "external": 2123847,
+        "arrayBuffers": 0
+      },
+      "executionMs": 397.80616999999995,
+      "responseMs": 487.93229699999995,
+      "cpuMs": 592.563,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 20138742,
+      "retainedOutputHeap": 25960906,
+      "peakRss": 143609856
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 4,
+        "variant": "base",
+        "modulePath": "/tmp/codex-graphql-v16/base/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 88043520,
+        "heapTotal": 3781632,
+        "heapUsed": 4211973,
+        "external": 2059578,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 93499392,
+        "heapTotal": 13399040,
+        "heapUsed": 4211973,
+        "external": 2065355,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 120446976,
+        "heapTotal": 43791360,
+        "heapUsed": 24364319,
+        "external": 2094351,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 142565376,
+        "heapTotal": 43809792,
+        "heapUsed": 24364319,
+        "external": 7894466,
+        "arrayBuffers": 5800115
+      },
+      "retained": {
+        "rss": 143638528,
+        "heapTotal": 32553984,
+        "heapUsed": 30183603,
+        "external": 2076366,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 145784832,
+        "heapTotal": 22821888,
+        "heapUsed": 25689245,
+        "external": 2101632,
+        "arrayBuffers": 0
+      },
+      "executionMs": 476.51091700000006,
+      "responseMs": 612.680565,
+      "cpuMs": 748.638,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 20152346,
+      "retainedOutputHeap": 25971630,
+      "peakRss": 145784832
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 4,
+        "variant": "compact",
+        "modulePath": "/tmp/codex-graphql-v16/pr/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 87633920,
+        "heapTotal": 3667968,
+        "heapUsed": 4222395,
+        "external": 2056002,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 87154688,
+        "heapTotal": 13400064,
+        "heapUsed": 14668539,
+        "external": 2067257,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 115433472,
+        "heapTotal": 43792384,
+        "heapUsed": 24359205,
+        "external": 2092981,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 139079680,
+        "heapTotal": 43810816,
+        "heapUsed": 24359205,
+        "external": 7893096,
+        "arrayBuffers": 5800115
+      },
+      "retained": {
+        "rss": 129810432,
+        "heapTotal": 32571392,
+        "heapUsed": 30179257,
+        "external": 2080064,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 134119424,
+        "heapTotal": 22839296,
+        "heapUsed": 25688543,
+        "external": 2105330,
+        "arrayBuffers": 0
+      },
+      "executionMs": 718.3660009999999,
+      "responseMs": 849.231012,
+      "cpuMs": 1034.265,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 20136810,
+      "retainedOutputHeap": 15510718,
+      "peakRss": 140161024
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 0,
+        "variant": "base",
+        "modulePath": "/tmp/codex-graphql-v16/base/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 107151360,
+        "heapTotal": 3782656,
+        "heapUsed": 4384178,
+        "external": 2130551,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 108490752,
+        "heapTotal": 14022656,
+        "heapUsed": 4384178,
+        "external": 2134768,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 116613120,
+        "heapTotal": 44922880,
+        "heapUsed": 24569988,
+        "external": 2150372,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 153890816,
+        "heapTotal": 44924928,
+        "heapUsed": 24569988,
+        "external": 10587987,
+        "arrayBuffers": 8437615
+      },
+      "retained": {
+        "rss": 145317888,
+        "heapTotal": 32522240,
+        "heapUsed": 33153812,
+        "external": 2149585,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 147193856,
+        "heapTotal": 22265856,
+        "heapUsed": 33153812,
+        "external": 2174875,
+        "arrayBuffers": 0
+      },
+      "executionMs": 677.386716,
+      "responseMs": 807.1976199999999,
+      "cpuMs": 926.564,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 20185810,
+      "retainedOutputHeap": 28769634,
+      "peakRss": 153890816
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 0,
+        "variant": "compact",
+        "modulePath": "/tmp/codex-graphql-v16/pr/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 107642880,
+        "heapTotal": 3799040,
+        "heapUsed": 4389915,
+        "external": 2137219,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 108982272,
+        "heapTotal": 14039040,
+        "heapUsed": 4389915,
+        "external": 2147442,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 115884032,
+        "heapTotal": 44906496,
+        "heapUsed": 24607686,
+        "external": 2168534,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 154562560,
+        "heapTotal": 44908544,
+        "heapUsed": 24607686,
+        "external": 10606149,
+        "arrayBuffers": 8437615
+      },
+      "retained": {
+        "rss": 155783168,
+        "heapTotal": 32538624,
+        "heapUsed": 33193110,
+        "external": 2161141,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 157388800,
+        "heapTotal": 22282240,
+        "heapUsed": 25062348,
+        "external": 2186431,
+        "arrayBuffers": 0
+      },
+      "executionMs": 552.226695,
+      "responseMs": 684.440703,
+      "cpuMs": 779.785,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 20217771,
+      "retainedOutputHeap": 28803195,
+      "peakRss": 157388800
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 1,
+        "variant": "compact",
+        "modulePath": "/tmp/codex-graphql-v16/pr/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 113352704,
+        "heapTotal": 3995648,
+        "heapUsed": 4403416,
+        "external": 2135877,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 114536448,
+        "heapTotal": 14055424,
+        "heapUsed": 4403416,
+        "external": 2142326,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 118538240,
+        "heapTotal": 44857344,
+        "heapUsed": 24588322,
+        "external": 2160162,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 156549120,
+        "heapTotal": 44859392,
+        "heapUsed": 24588322,
+        "external": 10597777,
+        "arrayBuffers": 8437615
+      },
+      "retained": {
+        "rss": 157323264,
+        "heapTotal": 32522240,
+        "heapUsed": 33186930,
+        "external": 2163033,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 159465472,
+        "heapTotal": 22298624,
+        "heapUsed": 25069232,
+        "external": 2188323,
+        "arrayBuffers": 0
+      },
+      "executionMs": 545.820247,
+      "responseMs": 663.209753,
+      "cpuMs": 763.799,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 20184906,
+      "retainedOutputHeap": 28783514,
+      "peakRss": 159465472
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 1,
+        "variant": "base",
+        "modulePath": "/tmp/codex-graphql-v16/base/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 107573248,
+        "heapTotal": 3781632,
+        "heapUsed": 4379645,
+        "external": 2130787,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 109211648,
+        "heapTotal": 14021632,
+        "heapUsed": 4379645,
+        "external": 2140996,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 117063680,
+        "heapTotal": 44889088,
+        "heapUsed": 24583600,
+        "external": 2156496,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 156884992,
+        "heapTotal": 44891136,
+        "heapUsed": 24583600,
+        "external": 10594111,
+        "arrayBuffers": 8437615
+      },
+      "retained": {
+        "rss": 157417472,
+        "heapTotal": 32521216,
+        "heapUsed": 33166032,
+        "external": 2148133,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 158482432,
+        "heapTotal": 22264832,
+        "heapUsed": 25035260,
+        "external": 2173423,
+        "arrayBuffers": 0
+      },
+      "executionMs": 468.96471900000006,
+      "responseMs": 586.203224,
+      "cpuMs": 667.449,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 20203955,
+      "retainedOutputHeap": 28786387,
+      "peakRss": 158482432
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 2,
+        "variant": "base",
+        "modulePath": "/tmp/codex-graphql-v16/base/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 109531136,
+        "heapTotal": 3781632,
+        "heapUsed": 4379101,
+        "external": 2133075,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 111173632,
+        "heapTotal": 14021632,
+        "heapUsed": 4379101,
+        "external": 2137292,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 118530048,
+        "heapTotal": 44872704,
+        "heapUsed": 24580664,
+        "external": 2158040,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 156770304,
+        "heapTotal": 44874752,
+        "heapUsed": 24580664,
+        "external": 10595655,
+        "arrayBuffers": 8437615
+      },
+      "retained": {
+        "rss": 157040640,
+        "heapTotal": 32521216,
+        "heapUsed": 33168328,
+        "external": 2159559,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 146677760,
+        "heapTotal": 22264832,
+        "heapUsed": 25054078,
+        "external": 2184849,
+        "arrayBuffers": 0
+      },
+      "executionMs": 397.78403,
+      "responseMs": 490.96936999999997,
+      "cpuMs": 560.212,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 20201563,
+      "retainedOutputHeap": 28789227,
+      "peakRss": 157310976
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 2,
+        "variant": "compact",
+        "modulePath": "/tmp/codex-graphql-v16/pr/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 107364352,
+        "heapTotal": 3799040,
+        "heapUsed": 4393134,
+        "external": 2134650,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 109215744,
+        "heapTotal": 14039040,
+        "heapUsed": 4393134,
+        "external": 2144864,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 117747712,
+        "heapTotal": 44857344,
+        "heapUsed": 24592316,
+        "external": 2167020,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 156008448,
+        "heapTotal": 44859392,
+        "heapUsed": 24592316,
+        "external": 10604635,
+        "arrayBuffers": 8437615
+      },
+      "retained": {
+        "rss": 156008448,
+        "heapTotal": 32522240,
+        "heapUsed": 33188300,
+        "external": 2160235,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 157614080,
+        "heapTotal": 22282240,
+        "heapUsed": 25060930,
+        "external": 2185525,
+        "arrayBuffers": 0
+      },
+      "executionMs": 417.34016500000007,
+      "responseMs": 516.180143,
+      "cpuMs": 587.63,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 20199182,
+      "retainedOutputHeap": 28795166,
+      "peakRss": 159334400
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 3,
+        "variant": "compact",
+        "modulePath": "/tmp/codex-graphql-v16/pr/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 107618304,
+        "heapTotal": 3798016,
+        "heapUsed": 4393934,
+        "external": 2135941,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 109342720,
+        "heapTotal": 14038016,
+        "heapUsed": 4393934,
+        "external": 2146150,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 117792768,
+        "heapTotal": 44839936,
+        "heapUsed": 24588474,
+        "external": 2167306,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 155807744,
+        "heapTotal": 44841984,
+        "heapUsed": 24588474,
+        "external": 10604921,
+        "arrayBuffers": 8437615
+      },
+      "retained": {
+        "rss": 155807744,
+        "heapTotal": 32504832,
+        "heapUsed": 33192138,
+        "external": 2159753,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 157413376,
+        "heapTotal": 22248448,
+        "heapUsed": 25065184,
+        "external": 2185043,
+        "arrayBuffers": 0
+      },
+      "executionMs": 419.372578,
+      "responseMs": 518.448458,
+      "cpuMs": 591.433,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 20194540,
+      "retainedOutputHeap": 28798204,
+      "peakRss": 159518720
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 3,
+        "variant": "base",
+        "modulePath": "/tmp/codex-graphql-v16/base/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 106598400,
+        "heapTotal": 3798016,
+        "heapUsed": 4394301,
+        "external": 2131907,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 108052480,
+        "heapTotal": 14038016,
+        "heapUsed": 4394301,
+        "external": 2142126,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 116887552,
+        "heapTotal": 44856320,
+        "heapUsed": 24583602,
+        "external": 2163842,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 152899584,
+        "heapTotal": 44858368,
+        "heapUsed": 24583602,
+        "external": 10601457,
+        "arrayBuffers": 8437615
+      },
+      "retained": {
+        "rss": 153432064,
+        "heapTotal": 32537600,
+        "heapUsed": 33170626,
+        "external": 2157497,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 155308032,
+        "heapTotal": 22281216,
+        "heapUsed": 25049680,
+        "external": 2182787,
+        "arrayBuffers": 0
+      },
+      "executionMs": 411.900027,
+      "responseMs": 517.898955,
+      "cpuMs": 588.448,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 20189301,
+      "retainedOutputHeap": 28776325,
+      "peakRss": 158629888
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 4,
+        "variant": "base",
+        "modulePath": "/tmp/codex-graphql-v16/base/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 107773952,
+        "heapTotal": 3782656,
+        "heapUsed": 4377821,
+        "external": 2133199,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 109436928,
+        "heapTotal": 14022656,
+        "heapUsed": 4377821,
+        "external": 2143412,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 118296576,
+        "heapTotal": 44873728,
+        "heapUsed": 24586400,
+        "external": 2164160,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 155742208,
+        "heapTotal": 44875776,
+        "heapUsed": 24586400,
+        "external": 10601775,
+        "arrayBuffers": 8437615
+      },
+      "retained": {
+        "rss": 142725120,
+        "heapTotal": 32522240,
+        "heapUsed": 33172784,
+        "external": 2157057,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 145412096,
+        "heapTotal": 22265856,
+        "heapUsed": 25049144,
+        "external": 2182347,
+        "arrayBuffers": 0
+      },
+      "executionMs": 408.662905,
+      "responseMs": 504.643464,
+      "cpuMs": 573.819,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 20208579,
+      "retainedOutputHeap": 28794963,
+      "peakRss": 155742208
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 4,
+        "variant": "compact",
+        "modulePath": "/tmp/codex-graphql-v16/pr/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 111697920,
+        "heapTotal": 3814400,
+        "heapUsed": 4393566,
+        "external": 2136113,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 114180096,
+        "heapTotal": 14054400,
+        "heapUsed": 4393566,
+        "external": 2146326,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 121131008,
+        "heapTotal": 44839936,
+        "heapUsed": 24588290,
+        "external": 2168482,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 159080448,
+        "heapTotal": 44841984,
+        "heapUsed": 24588290,
+        "external": 10606097,
+        "arrayBuffers": 8437615
+      },
+      "retained": {
+        "rss": 159080448,
+        "heapTotal": 32504832,
+        "heapUsed": 33192914,
+        "external": 2164337,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 160411648,
+        "heapTotal": 22264832,
+        "heapUsed": 25069880,
+        "external": 2189627,
+        "arrayBuffers": 0
+      },
+      "executionMs": 433.310474,
+      "responseMs": 530.388641,
+      "cpuMs": 611.999,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 20194724,
+      "retainedOutputHeap": 28799348,
+      "peakRss": 162611200
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 0,
+        "variant": "base",
+        "modulePath": "/tmp/codex-graphql-v16/base/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 115265536,
+        "heapTotal": 3980288,
+        "heapUsed": 4957087,
+        "external": 2197506,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 132317184,
+        "heapTotal": 18743296,
+        "heapUsed": 25354388,
+        "external": 15089343,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 164028416,
+        "heapTotal": 63946752,
+        "heapUsed": 58366099,
+        "external": 27382819,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 208269312,
+        "heapTotal": 64932864,
+        "heapUsed": 58366099,
+        "external": 45626251,
+        "arrayBuffers": 8820115
+      },
+      "retained": {
+        "rss": 208539648,
+        "heapTotal": 47991808,
+        "heapUsed": 78252731,
+        "external": 27983386,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 217026560,
+        "heapTotal": 4065280,
+        "heapUsed": 78252731,
+        "external": 2233252,
+        "arrayBuffers": 0
+      },
+      "executionMs": 483.05501599999997,
+      "responseMs": 585.5236849999999,
+      "cpuMs": 637.113,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 53409012,
+      "retainedOutputHeap": 52898343,
+      "peakRss": 217374720
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 0,
+        "variant": "compact",
+        "modulePath": "/tmp/codex-graphql-v16/pr/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 117444608,
+        "heapTotal": 4029440,
+        "heapUsed": 5078764,
+        "external": 2203349,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 134434816,
+        "heapTotal": 18792448,
+        "heapUsed": 25404335,
+        "external": 15095182,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 167301120,
+        "heapTotal": 64881664,
+        "heapUsed": 59264490,
+        "external": 27373226,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 208830464,
+        "heapTotal": 64883712,
+        "heapUsed": 78269778,
+        "external": 45634930,
+        "arrayBuffers": 8820115
+      },
+      "retained": {
+        "rss": 209895424,
+        "heapTotal": 47975424,
+        "heapUsed": 78269778,
+        "external": 27989377,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 218333184,
+        "heapTotal": 4130816,
+        "heapUsed": 78269778,
+        "external": 2239243,
+        "arrayBuffers": 0
+      },
+      "executionMs": 475.224131,
+      "responseMs": 583.0248180000001,
+      "cpuMs": 633.711,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 73191014,
+      "retainedOutputHeap": 52865443,
+      "peakRss": 218546176
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 1,
+        "variant": "compact",
+        "modulePath": "/tmp/codex-graphql-v16/pr/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 116789248,
+        "heapTotal": 4028416,
+        "heapUsed": 4999407,
+        "external": 2203349,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 133648384,
+        "heapTotal": 18791424,
+        "heapUsed": 25261983,
+        "external": 15095182,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 165527552,
+        "heapTotal": 64913408,
+        "heapUsed": 59271306,
+        "external": 27375802,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 207511552,
+        "heapTotal": 64915456,
+        "heapUsed": 78273690,
+        "external": 45636218,
+        "arrayBuffers": 8820115
+      },
+      "retained": {
+        "rss": 207781888,
+        "heapTotal": 47990784,
+        "heapUsed": 78273690,
+        "external": 27989377,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 216989696,
+        "heapTotal": 4129792,
+        "heapUsed": 60657368,
+        "external": 2239253,
+        "arrayBuffers": 0
+      },
+      "executionMs": 520.46982,
+      "responseMs": 623.491677,
+      "cpuMs": 682.951,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 73274283,
+      "retainedOutputHeap": 53011707,
+      "peakRss": 216989696
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 1,
+        "variant": "base",
+        "modulePath": "/tmp/codex-graphql-v16/base/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 117977088,
+        "heapTotal": 3980288,
+        "heapUsed": 4969930,
+        "external": 2202019,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 134688768,
+        "heapTotal": 18743296,
+        "heapUsed": 25407773,
+        "external": 15093852,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 162480128,
+        "heapTotal": 63979520,
+        "heapUsed": 58371376,
+        "external": 27387264,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 205987840,
+        "heapTotal": 64965632,
+        "heapUsed": 78254563,
+        "external": 45632339,
+        "arrayBuffers": 8820115
+      },
+      "retained": {
+        "rss": 206254080,
+        "heapTotal": 47975424,
+        "heapUsed": 78254563,
+        "external": 27986671,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 215773184,
+        "heapTotal": 4065280,
+        "heapUsed": 78254563,
+        "external": 2236537,
+        "arrayBuffers": 0
+      },
+      "executionMs": 475.963436,
+      "responseMs": 585.745436,
+      "cpuMs": 638.297,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 73284633,
+      "retainedOutputHeap": 52846790,
+      "peakRss": 215773184
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 2,
+        "variant": "base",
+        "modulePath": "/tmp/codex-graphql-v16/base/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 117256192,
+        "heapTotal": 3979264,
+        "heapUsed": 4968035,
+        "external": 2197286,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 134262784,
+        "heapTotal": 18742272,
+        "heapUsed": 25329584,
+        "external": 15089119,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 164438016,
+        "heapTotal": 63962112,
+        "heapUsed": 58365483,
+        "external": 27383819,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 206630912,
+        "heapTotal": 64948224,
+        "heapUsed": 78254374,
+        "external": 45631382,
+        "arrayBuffers": 8820115
+      },
+      "retained": {
+        "rss": 206692352,
+        "heapTotal": 47974400,
+        "heapUsed": 78254374,
+        "external": 27983226,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 215838720,
+        "heapTotal": 4064256,
+        "heapUsed": 78254374,
+        "external": 2233092,
+        "arrayBuffers": 0
+      },
+      "executionMs": 482.50707700000004,
+      "responseMs": 579.137594,
+      "cpuMs": 635.462,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 73286339,
+      "retainedOutputHeap": 52924790,
+      "peakRss": 215838720
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 2,
+        "variant": "compact",
+        "modulePath": "/tmp/codex-graphql-v16/pr/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 115531776,
+        "heapTotal": 4029440,
+        "heapUsed": 4994924,
+        "external": 2199856,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 132268032,
+        "heapTotal": 18792448,
+        "heapUsed": 25352682,
+        "external": 15091690,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 164601856,
+        "heapTotal": 64898048,
+        "heapUsed": 59267710,
+        "external": 27371022,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 208183296,
+        "heapTotal": 64900096,
+        "heapUsed": 78270094,
+        "external": 45631438,
+        "arrayBuffers": 8820115
+      },
+      "retained": {
+        "rss": 207785984,
+        "heapTotal": 47991808,
+        "heapUsed": 78270094,
+        "external": 27985857,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 216813568,
+        "heapTotal": 4130816,
+        "heapUsed": 60656296,
+        "external": 2235723,
+        "arrayBuffers": 0
+      },
+      "executionMs": 559.000366,
+      "responseMs": 675.267807,
+      "cpuMs": 737.232,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 73275170,
+      "retainedOutputHeap": 52917412,
+      "peakRss": 219095040
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 3,
+        "variant": "compact",
+        "modulePath": "/tmp/codex-graphql-v16/pr/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 118366208,
+        "heapTotal": 4044800,
+        "heapUsed": 5074672,
+        "external": 2203360,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 135913472,
+        "heapTotal": 18791424,
+        "heapUsed": 25348226,
+        "external": 15095198,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 168087552,
+        "heapTotal": 64864256,
+        "heapUsed": 59256794,
+        "external": 27373242,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 211652608,
+        "heapTotal": 64883712,
+        "heapUsed": 78264858,
+        "external": 45636234,
+        "arrayBuffers": 8820115
+      },
+      "retained": {
+        "rss": 211922944,
+        "heapTotal": 47991808,
+        "heapUsed": 78264858,
+        "external": 27988055,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 220393472,
+        "heapTotal": 4163584,
+        "heapUsed": 78264858,
+        "external": 2237921,
+        "arrayBuffers": 0
+      },
+      "executionMs": 454.4486989999999,
+      "responseMs": 547.837594,
+      "cpuMs": 598.553,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 73190186,
+      "retainedOutputHeap": 52916632,
+      "peakRss": 220393472
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 3,
+        "variant": "base",
+        "modulePath": "/tmp/codex-graphql-v16/base/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 117514240,
+        "heapTotal": 3979264,
+        "heapUsed": 4994383,
+        "external": 2201278,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 134385664,
+        "heapTotal": 18742272,
+        "heapUsed": 25212600,
+        "external": 15093111,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 164831232,
+        "heapTotal": 63962112,
+        "heapUsed": 58372995,
+        "external": 27390387,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 208867328,
+        "heapTotal": 64948224,
+        "heapUsed": 78257717,
+        "external": 45635605,
+        "arrayBuffers": 8820115
+      },
+      "retained": {
+        "rss": 191819776,
+        "heapTotal": 47990784,
+        "heapUsed": 78257717,
+        "external": 27985930,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 218267648,
+        "heapTotal": 4064256,
+        "heapUsed": 60646849,
+        "external": 2235796,
+        "arrayBuffers": 0
+      },
+      "executionMs": 530.377083,
+      "responseMs": 641.388991,
+      "cpuMs": 700.522,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 73263334,
+      "retainedOutputHeap": 53045117,
+      "peakRss": 218267648
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 4,
+        "variant": "base",
+        "modulePath": "/tmp/codex-graphql-v16/base/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 114868224,
+        "heapTotal": 3978240,
+        "heapUsed": 4979469,
+        "external": 2201110,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 132116480,
+        "heapTotal": 18741248,
+        "heapUsed": 25361552,
+        "external": 15092943,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 163737600,
+        "heapTotal": 63977472,
+        "heapUsed": 58383763,
+        "external": 27394147,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 208257024,
+        "heapTotal": 64963584,
+        "heapUsed": 58383763,
+        "external": 45635003,
+        "arrayBuffers": 8820115
+      },
+      "retained": {
+        "rss": 208527360,
+        "heapTotal": 47989760,
+        "heapUsed": 78264907,
+        "external": 27987050,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 217186304,
+        "heapTotal": 4063232,
+        "heapUsed": 60648961,
+        "external": 2236916,
+        "arrayBuffers": 0
+      },
+      "executionMs": 484.22239299999995,
+      "responseMs": 578.101032,
+      "cpuMs": 632.462,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 53404294,
+      "retainedOutputHeap": 52903355,
+      "peakRss": 217186304
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 4,
+        "variant": "compact",
+        "modulePath": "/tmp/codex-graphql-v16/pr/npmDist/index.js"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.2.18",
+        "boringssl": "29a2cd359458c9384694b75456026e4b57e3e567",
+        "openssl": "1.1.0",
+        "libarchive": "898dc8319355b7e985f68a9819f182aaed61b53a",
+        "mimalloc": "4c283af60cdae205df5a872530c77e2a6a307d43",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "webkit": "29bbdff0f94f362891f8e007ae2a73f9bc3e66d3",
+        "zig": "0.14.1",
+        "zlib": "886098f3f339617b4243b286f5ed364b9989e245",
+        "tinycc": "ab631362d839333660a265d3084d8ff060b96753",
+        "lolhtml": "8d4c273ded322193d017042d1f48df2766b0f88b",
+        "ares": "d1722e6e8acaf10eb73fa995798a9cd421d9f85e",
+        "libdeflate": "dc76454a39e7e83b68c3704b6e3784654f8d5ac5",
+        "usockets": "0d4089ea7c48d339e87cc48f1871aeee745d8112",
+        "lshpack": "3d0f1fc1d6e66a642e7a98c55deb38aa986eb4b0",
+        "zstd": "794ea1b0afca0f020f4e57b6732332231fb23c70",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.48.0",
+        "napi": "10",
+        "icu": "75.1",
+        "unicode": "15.1",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 116862976,
+        "heapTotal": 4044800,
+        "heapUsed": 4995250,
+        "external": 2201116,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 133885952,
+        "heapTotal": 18791424,
+        "heapUsed": 25376006,
+        "external": 15092949,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 165392384,
+        "heapTotal": 64897024,
+        "heapUsed": 59252769,
+        "external": 27365905,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 208781312,
+        "heapTotal": 64899072,
+        "heapUsed": 78263673,
+        "external": 45630185,
+        "arrayBuffers": 8820115
+      },
+      "retained": {
+        "rss": 209051648,
+        "heapTotal": 47990784,
+        "heapUsed": 78263673,
+        "external": 27987116,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 217976832,
+        "heapTotal": 4146176,
+        "heapUsed": 78263673,
+        "external": 2236982,
+        "arrayBuffers": 0
+      },
+      "executionMs": 549.1172349999999,
+      "responseMs": 654.2282500000001,
+      "cpuMs": 712.062,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 73268423,
+      "retainedOutputHeap": 52887667,
+      "peakRss": 217976832
+    }
+  ],
+  "completedAt": "2026-10-27T12:05:27.269Z"
+}

@@ -1,0 +1,5 @@
+
+> graphql@16.14.2 check:spelling
+> cspell --cache --no-progress '**/*'
+
+CSpell: Files checked: 386, Issues found: 0 in 0 files

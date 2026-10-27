@@ -1,0 +1,6 @@
+
+> graphql@16.14.2 prettier:check
+> prettier --check .
+
+Checking formatting...
+All matched files use Prettier code style!
