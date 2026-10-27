@@ -2,7 +2,7 @@
 
 Candidate: `11f2b7ad49bf42d31021609dd9b36518ac14bda8`.
 Base: `c93662d3c1e6ad71b31e5926319998abf1378db7` (`17.x.x`).
-Node 24.19.0 / V8 13.6.233.17-node.51, Windows x64.
+Node 24.22.1 / V8 13.6.233.17-node.58, Windows x64 (verified against raw trial metadata; an earlier draft copied the prototype's 24.19.0 label).
 
 This branch preserves evidence separately from the four-file source PR. Benchmarks import the real candidate and base source trees; no source transformation or promise/executor overlay is used.
 
@@ -26,7 +26,7 @@ One request per fresh process, alternating AB/BA pairs, no simultaneous tests/bu
 
 ## Reproduce
 
-Run in the root of this evidence branch checkout, with Node 24.19.0. The benchmark source files use the workspace paths below; create separate base and candidate checkouts without changing this evidence branch:
+Run in the root of this evidence branch checkout, with Node 24.22.1. The benchmark source files use the workspace paths below; create separate base and candidate checkouts without changing this evidence branch:
 
 ```sh
 git clone https://github.com/graphql/graphql-js.git work/graphql-js-study
@@ -46,6 +46,12 @@ node outputs/graphql-js-study/analyze.mjs outputs/graphql-js-study/reproduction-
 
 Run serially. New result names are required: the runner refuses to overwrite results, validates exact bytes/SHA256, and fingerprints source files before each trial. Raw events and summaries are the `pr-pilot25`, `pr-confirm100` and `pr-async3` JSON files beside this document. All sizes are decimal MB unless explicitly marked MiB/GiB.
 
+## Width and engine assessment
+
+[Additional width/engine evidence](SHAPE-EVIDENCE.md) covers 40 fresh pairs at widths 1, 8, 32 and 100 on Node 24.22.1 and Bun 1.3.14. Node retains about 79% less output heap for 1/8-field objects, but no less for 32/100-field objects. Bun shows no consistent memory benefit. The report retains the observed timing and RSS regressions; the dense 100 MB result should not be generalized to every selection or engine.
+
 ## Validation limits
 
-3,112 source tests pass with 100% line/branch/function coverage. 360 executable examples, repository-wide lint/type/spelling checks, example formatting, changed-file formatting, and the two new tests under Bun 1.3.14 pass. Full `npm test` stops at a Deno export-path error on Windows, also reproduced on the unchanged base. Full-repository format checking flags CRLF checkout differences; the recorded unchanged base file fails raw and passes when normalized to LF. This does not establish full integration or cross-engine performance readiness.
+On a clean Linux checkout, 3,112 source tests pass with 100% line/branch/function coverage; 360 examples and 11 fuzz tests pass. Repository lint, types, full formatting, spelling, npm/Deno builds and the Deno package check pass. The integration harness passes 17 cases and fails 12 at unavailable Docker launches; all 15 subsequent direct Node/Bun/Deno commands pass. Full container/runtime-matrix coverage remains for CI. [Validation details and logs](VALIDATION.md), [independent review](REVIEW.md).
+
+Earlier Windows full-suite Deno-path and CRLF formatting issues do not reproduce on the clean Linux checkout. No unrelated platform changes are included in the source PR.

@@ -1,0 +1,16 @@
+project	exit	command
+diagnostics-bun	0	bun test.js
+dev-bun	0	bun --conditions=development test.js
+prod-bun	0	bun test.js
+diagnostics-deno-with-deno-build	0	deno run test.js
+diagnostics-deno-with-node-build	0	deno run --conditions=development test.js
+dev-deno-with-deno-build	0	deno run test.js
+dev-deno-with-node-build	0	deno run --conditions=development test.js
+prod-deno-with-deno-build	0	deno run test.js
+prod-deno-with-node-build	0	deno run test.js
+ts	0	deno check
+node	0	node index.cjs
+node	0	node index.mjs
+conditions	0	env MODULE_SYNC=true node check.mjs
+conditions	0	env MODULE_SYNC=true bun check.mjs
+conditions	0	env MODULE_SYNC=false deno run --allow-read --allow-env check.mjs

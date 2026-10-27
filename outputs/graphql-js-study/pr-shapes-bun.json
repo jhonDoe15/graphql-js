@@ -1,0 +1,3417 @@
+{
+  "engine": "bun",
+  "executable": "C:/Users/noamy/Documents/Codex/2026-10-23/graphql-memory-investigation/work/gateway-pr/node_modules/bun/bin/bun.exe",
+  "source": {
+    "outputs/graphql-js-study/shape-case.mjs": "41a958e3e7bef1afec6f29eb7f864ab3da0903b39dd416c9b8c99c5ef26abfb7",
+    "outputs/graphql-js-study/shape-run.mjs": "a6b9dd3f2da32bd99c8e451af4d28359fc1fd518588d57da55df5ca96de8792b",
+    "work/graphql-js-pr/src/execution/Executor.ts": "7aa74fafa7998ecf3875aadbf922f8a5f88bc44660f072c032a82c622f132737",
+    "work/graphql-js-pr/src/jsutils/promiseForObject.ts": "683c884526558594df7a7bd87e782985f47b96446708474be4a00f281cf92a9a",
+    "work/graphql-js-pr/src/jsutils/CompactExecutionResultMap.ts": "a213fd03fd790a81309807077ffafd2496bd02fea49a2c672b300656b8d11fd1",
+    "work/graphql-js-study/src/execution/Executor.ts": "f71e77697b8f0c7424db885e1893f13d3d3fa7dae72b2028d87b66c7a552fb2d",
+    "work/graphql-js-study/src/jsutils/promiseForObject.ts": "8dbf40882f90ac982ea00748194eeed3af39fe9334b8fcc9e5bb8cb027d24e3d"
+  },
+  "startedAt": "2026-10-27T01:48:04.395Z",
+  "events": [
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 0,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 94765056,
+        "heapTotal": 3603456,
+        "heapUsed": 3786640,
+        "external": 1722183,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 102846464,
+        "heapTotal": 9960448,
+        "heapUsed": 11042920,
+        "external": 1740492,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 142626816,
+        "heapTotal": 37439488,
+        "heapUsed": 16295256,
+        "external": 1799864,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 144556032,
+        "heapTotal": 37440512,
+        "heapUsed": 16295256,
+        "external": 2699995,
+        "arrayBuffers": 900131
+      },
+      "retained": {
+        "rss": 145158144,
+        "heapTotal": 18006016,
+        "heapUsed": 18644318,
+        "external": 1754624,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 146239488,
+        "heapTotal": 3489792,
+        "heapUsed": 18644318,
+        "external": 1799823,
+        "arrayBuffers": 0
+      },
+      "executionMs": 88.11729999999997,
+      "responseMs": 104.77520000000001,
+      "cpuMs": 203,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 12508616,
+      "retainedOutputHeap": 7601398,
+      "peakRss": 146259968
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 0,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 96120832,
+        "heapTotal": 3767296,
+        "heapUsed": 3803072,
+        "external": 1722281,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 102903808,
+        "heapTotal": 9993216,
+        "heapUsed": 3803072,
+        "external": 1742046,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 140107776,
+        "heapTotal": 37963776,
+        "heapUsed": 16179590,
+        "external": 1800710,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 142159872,
+        "heapTotal": 37964800,
+        "heapUsed": 19704318,
+        "external": 3758990,
+        "arrayBuffers": 900131
+      },
+      "retained": {
+        "rss": 143732736,
+        "heapTotal": 19742720,
+        "heapUsed": 19707437,
+        "external": 1753090,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 144650240,
+        "heapTotal": 3522560,
+        "heapUsed": 18550046,
+        "external": 1798289,
+        "arrayBuffers": 0
+      },
+      "executionMs": 86.50060000000002,
+      "responseMs": 108.1567,
+      "cpuMs": 202,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 15901246,
+      "retainedOutputHeap": 15904365,
+      "peakRss": 144670720
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 1,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 94953472,
+        "heapTotal": 3489792,
+        "heapUsed": 3795299,
+        "external": 1726105,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 102539264,
+        "heapTotal": 9994240,
+        "heapUsed": 3795299,
+        "external": 1742434,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 141520896,
+        "heapTotal": 39128064,
+        "heapUsed": 16098222,
+        "external": 1811406,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 143577088,
+        "heapTotal": 39129088,
+        "heapUsed": 18806951,
+        "external": 3768522,
+        "arrayBuffers": 900131
+      },
+      "retained": {
+        "rss": 145817600,
+        "heapTotal": 19943424,
+        "heapUsed": 19714045,
+        "external": 1767497,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 146817024,
+        "heapTotal": 3539968,
+        "heapUsed": 19714045,
+        "external": 1814736,
+        "arrayBuffers": 0
+      },
+      "executionMs": 71.26419999999999,
+      "responseMs": 91.22370000000001,
+      "cpuMs": 157,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 15011652,
+      "retainedOutputHeap": 15918746,
+      "peakRss": 146841600
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 1,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 96280576,
+        "heapTotal": 3506176,
+        "heapUsed": 3788501,
+        "external": 1723372,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 104030208,
+        "heapTotal": 10027008,
+        "heapUsed": 3788501,
+        "external": 1739697,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 143368192,
+        "heapTotal": 38767616,
+        "heapUsed": 16134261,
+        "external": 1805493,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 145264640,
+        "heapTotal": 38768640,
+        "heapUsed": 18792256,
+        "external": 3758067,
+        "arrayBuffers": 900131
+      },
+      "retained": {
+        "rss": 147021824,
+        "heapTotal": 19894272,
+        "heapUsed": 19704515,
+        "external": 1763519,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 147939328,
+        "heapTotal": 3556352,
+        "heapUsed": 19704515,
+        "external": 1810751,
+        "arrayBuffers": 0
+      },
+      "executionMs": 82.78360000000004,
+      "responseMs": 106.65100000000001,
+      "cpuMs": 203,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 15003755,
+      "retainedOutputHeap": 15916014,
+      "peakRss": 147959808
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 2,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 96538624,
+        "heapTotal": 3488768,
+        "heapUsed": 3792978,
+        "external": 1724400,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 103337984,
+        "heapTotal": 10009600,
+        "heapUsed": 3792978,
+        "external": 1740145,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 142385152,
+        "heapTotal": 37947392,
+        "heapUsed": 16254225,
+        "external": 1795025,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 144396288,
+        "heapTotal": 37948416,
+        "heapUsed": 16254225,
+        "external": 2695156,
+        "arrayBuffers": 900131
+      },
+      "retained": {
+        "rss": 140107776,
+        "heapTotal": 18104320,
+        "heapUsed": 18644919,
+        "external": 1752629,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 127602688,
+        "heapTotal": 3538944,
+        "heapUsed": 18644919,
+        "external": 1797832,
+        "arrayBuffers": 0
+      },
+      "executionMs": 70.02850000000004,
+      "responseMs": 86.1206,
+      "cpuMs": 157,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 12461247,
+      "retainedOutputHeap": 14851941,
+      "peakRss": 146030592
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 2,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 97198080,
+        "heapTotal": 3505152,
+        "heapUsed": 3797303,
+        "external": 1725437,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 104058880,
+        "heapTotal": 10009600,
+        "heapUsed": 3797303,
+        "external": 1741758,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 141373440,
+        "heapTotal": 38930432,
+        "heapUsed": 16121686,
+        "external": 1809942,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 143622144,
+        "heapTotal": 38931456,
+        "heapUsed": 18810191,
+        "external": 3767058,
+        "arrayBuffers": 900131
+      },
+      "retained": {
+        "rss": 145879040,
+        "heapTotal": 19926016,
+        "heapUsed": 19717285,
+        "external": 1763122,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 135647232,
+        "heapTotal": 3555328,
+        "heapUsed": 18563102,
+        "external": 1810361,
+        "arrayBuffers": 0
+      },
+      "executionMs": 78.994,
+      "responseMs": 101.2191,
+      "cpuMs": 156,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 15012888,
+      "retainedOutputHeap": 15919982,
+      "peakRss": 146550784
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 3,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 94302208,
+        "heapTotal": 3489792,
+        "heapUsed": 3796883,
+        "external": 1726041,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 101994496,
+        "heapTotal": 9994240,
+        "heapUsed": 3796883,
+        "external": 1742366,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 140349440,
+        "heapTotal": 37768192,
+        "heapUsed": 16253838,
+        "external": 1808334,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 142114816,
+        "heapTotal": 37769216,
+        "heapUsed": 16253838,
+        "external": 2708465,
+        "arrayBuffers": 900131
+      },
+      "retained": {
+        "rss": 144523264,
+        "heapTotal": 18124800,
+        "heapUsed": 18664901,
+        "external": 1767786,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 145690624,
+        "heapTotal": 3539968,
+        "heapUsed": 18664901,
+        "external": 1815025,
+        "arrayBuffers": 0
+      },
+      "executionMs": 72.7405,
+      "responseMs": 88.48100000000002,
+      "cpuMs": 188,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 12456955,
+      "retainedOutputHeap": 14868018,
+      "peakRss": 145715200
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 3,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 96641024,
+        "heapTotal": 3473408,
+        "heapUsed": 3788772,
+        "external": 1723316,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 103321600,
+        "heapTotal": 9994240,
+        "heapUsed": 3788772,
+        "external": 1739637,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 142503936,
+        "heapTotal": 37817344,
+        "heapUsed": 16241141,
+        "external": 1804309,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 144764928,
+        "heapTotal": 37818368,
+        "heapUsed": 16241141,
+        "external": 2704440,
+        "arrayBuffers": 900131
+      },
+      "retained": {
+        "rss": 147525632,
+        "heapTotal": 18105344,
+        "heapUsed": 18654427,
+        "external": 1762552,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 148586496,
+        "heapTotal": 3523584,
+        "heapUsed": 18654427,
+        "external": 1807751,
+        "arrayBuffers": 0
+      },
+      "executionMs": 69.92749999999998,
+      "responseMs": 85.09270000000001,
+      "cpuMs": 220,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 12452369,
+      "retainedOutputHeap": 14865655,
+      "peakRss": 148606976
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 4,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 96956416,
+        "heapTotal": 3456000,
+        "heapUsed": 3791309,
+        "external": 1722865,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 103362560,
+        "heapTotal": 9993216,
+        "heapUsed": 3791309,
+        "external": 1739506,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 141893632,
+        "heapTotal": 37865472,
+        "heapUsed": 16201102,
+        "external": 1795326,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 143728640,
+        "heapTotal": 37866496,
+        "heapUsed": 16201102,
+        "external": 2695457,
+        "arrayBuffers": 900131
+      },
+      "retained": {
+        "rss": 145555456,
+        "heapTotal": 18120704,
+        "heapUsed": 18644276,
+        "external": 1753666,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 136130560,
+        "heapTotal": 3506176,
+        "heapUsed": 18644276,
+        "external": 1798865,
+        "arrayBuffers": 0
+      },
+      "executionMs": 67.5241,
+      "responseMs": 84.12840000000003,
+      "cpuMs": 156,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 12409793,
+      "retainedOutputHeap": 14852967,
+      "peakRss": 146186240
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 4,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 96124928,
+        "heapTotal": 3505152,
+        "heapUsed": 3795301,
+        "external": 1725658,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 104050688,
+        "heapTotal": 10009600,
+        "heapUsed": 3795301,
+        "external": 1741987,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 143081472,
+        "heapTotal": 37865472,
+        "heapUsed": 16271131,
+        "external": 1807387,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 145018880,
+        "heapTotal": 37866496,
+        "heapUsed": 16271131,
+        "external": 2707518,
+        "arrayBuffers": 900131
+      },
+      "retained": {
+        "rss": 147087360,
+        "heapTotal": 18123776,
+        "heapUsed": 18661234,
+        "external": 1770858,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 139976704,
+        "heapTotal": 3555328,
+        "heapUsed": 18661234,
+        "external": 1818097,
+        "arrayBuffers": 0
+      },
+      "executionMs": 84.57559999999998,
+      "responseMs": 102.49300000000002,
+      "cpuMs": 250,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 12475830,
+      "retainedOutputHeap": 14865933,
+      "peakRss": 147542016
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 0,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 112619520,
+        "heapTotal": 3570688,
+        "heapUsed": 3869141,
+        "external": 1781467,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 115228672,
+        "heapTotal": 13302784,
+        "heapUsed": 3869141,
+        "external": 1798008,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 157200384,
+        "heapTotal": 53446656,
+        "heapUsed": 23729192,
+        "external": 1841384,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 173699072,
+        "heapTotal": 53447680,
+        "heapUsed": 23729192,
+        "external": 7641515,
+        "arrayBuffers": 5800131
+      },
+      "retained": {
+        "rss": 174833664,
+        "heapTotal": 28871680,
+        "heapUsed": 29856358,
+        "external": 1826967,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 176226304,
+        "heapTotal": 3637248,
+        "heapUsed": 29856358,
+        "external": 1874206,
+        "arrayBuffers": 0
+      },
+      "executionMs": 291.58489999999995,
+      "responseMs": 370.4239,
+      "cpuMs": 611,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 19860051,
+      "retainedOutputHeap": 25987217,
+      "peakRss": 176250880
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 0,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 113164288,
+        "heapTotal": 3668992,
+        "heapUsed": 3872388,
+        "external": 1786372,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 116944896,
+        "heapTotal": 13302784,
+        "heapUsed": 14330533,
+        "external": 1801421,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 155381760,
+        "heapTotal": 53774336,
+        "heapUsed": 23924305,
+        "external": 1842513,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 171175936,
+        "heapTotal": 53775360,
+        "heapUsed": 23924305,
+        "external": 7642644,
+        "arrayBuffers": 5800131
+      },
+      "retained": {
+        "rss": 172519424,
+        "heapTotal": 31230976,
+        "heapUsed": 29860152,
+        "external": 1825953,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 152088576,
+        "heapTotal": 3637248,
+        "heapUsed": 29860152,
+        "external": 1873199,
+        "arrayBuffers": 0
+      },
+      "executionMs": 336.5393,
+      "responseMs": 419.78,
+      "cpuMs": 500,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 20051917,
+      "retainedOutputHeap": 15529619,
+      "peakRss": 174223360
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 1,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 112611328,
+        "heapTotal": 3570688,
+        "heapUsed": 3865074,
+        "external": 1787100,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 116350976,
+        "heapTotal": 13302784,
+        "heapUsed": 14323245,
+        "external": 1801253,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 154423296,
+        "heapTotal": 53692416,
+        "heapUsed": 23906073,
+        "external": 1842345,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 170905600,
+        "heapTotal": 53693440,
+        "heapUsed": 23906073,
+        "external": 7642476,
+        "arrayBuffers": 5800131
+      },
+      "retained": {
+        "rss": 172560384,
+        "heapTotal": 31230976,
+        "heapUsed": 29849728,
+        "external": 1825433,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 152100864,
+        "heapTotal": 3637248,
+        "heapUsed": 29849728,
+        "external": 1872679,
+        "arrayBuffers": 0
+      },
+      "executionMs": 333.33170000000007,
+      "responseMs": 415.5921000000001,
+      "cpuMs": 484,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 20040999,
+      "retainedOutputHeap": 15526483,
+      "peakRss": 173838336
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 1,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 113664000,
+        "heapTotal": 3554304,
+        "heapUsed": 3858260,
+        "external": 1785267,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 117346304,
+        "heapTotal": 13286400,
+        "heapUsed": 14313172,
+        "external": 1798844,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 155516928,
+        "heapTotal": 53643264,
+        "heapUsed": 23890328,
+        "external": 1839512,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 172527616,
+        "heapTotal": 53644288,
+        "heapUsed": 23890328,
+        "external": 7639643,
+        "arrayBuffers": 5800131
+      },
+      "retained": {
+        "rss": 173936640,
+        "heapTotal": 31214592,
+        "heapUsed": 29841718,
+        "external": 1822615,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 171184128,
+        "heapTotal": 3604480,
+        "heapUsed": 29841718,
+        "external": 1869854,
+        "arrayBuffers": 0
+      },
+      "executionMs": 322.4936,
+      "responseMs": 403.12429999999995,
+      "cpuMs": 500,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 20032068,
+      "retainedOutputHeap": 15528546,
+      "peakRss": 175280128
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 2,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 112029696,
+        "heapTotal": 3570688,
+        "heapUsed": 3865268,
+        "external": 1781976,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 115253248,
+        "heapTotal": 13302784,
+        "heapUsed": 3865268,
+        "external": 1798617,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 156557312,
+        "heapTotal": 53446656,
+        "heapUsed": 23720349,
+        "external": 1841309,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 174039040,
+        "heapTotal": 53447680,
+        "heapUsed": 23720349,
+        "external": 7641440,
+        "arrayBuffers": 5800131
+      },
+      "retained": {
+        "rss": 175284224,
+        "heapTotal": 28871680,
+        "heapUsed": 29851675,
+        "external": 1829160,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 151977984,
+        "heapTotal": 3620864,
+        "heapUsed": 29851675,
+        "external": 1876399,
+        "arrayBuffers": 0
+      },
+      "executionMs": 318.04410000000007,
+      "responseMs": 400.5354,
+      "cpuMs": 484,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 19855081,
+      "retainedOutputHeap": 25986407,
+      "peakRss": 176361472
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 2,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 112914432,
+        "heapTotal": 3570688,
+        "heapUsed": 3872510,
+        "external": 1784332,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 116928512,
+        "heapTotal": 13302784,
+        "heapUsed": 14330653,
+        "external": 1800557,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 157753344,
+        "heapTotal": 53463040,
+        "heapUsed": 23736885,
+        "external": 1845125,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 174501888,
+        "heapTotal": 53464064,
+        "heapUsed": 23736885,
+        "external": 7645256,
+        "arrayBuffers": 5800131
+      },
+      "retained": {
+        "rss": 175083520,
+        "heapTotal": 28871680,
+        "heapUsed": 29860684,
+        "external": 1829441,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 171831296,
+        "heapTotal": 3620864,
+        "heapUsed": 29860684,
+        "external": 1876687,
+        "arrayBuffers": 0
+      },
+      "executionMs": 327.9551,
+      "responseMs": 411.2388000000001,
+      "cpuMs": 500,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 19864375,
+      "retainedOutputHeap": 15530031,
+      "peakRss": 176607232
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 3,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 111448064,
+        "heapTotal": 3570688,
+        "heapUsed": 3867569,
+        "external": 1784073,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 114540544,
+        "heapTotal": 13302784,
+        "heapUsed": 3867569,
+        "external": 1800298,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 155471872,
+        "heapTotal": 53463040,
+        "heapUsed": 23729270,
+        "external": 1845334,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 171085824,
+        "heapTotal": 53464064,
+        "heapUsed": 23729270,
+        "external": 7645465,
+        "arrayBuffers": 5800131
+      },
+      "retained": {
+        "rss": 173412352,
+        "heapTotal": 28871680,
+        "heapUsed": 29857325,
+        "external": 1831602,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 164253696,
+        "heapTotal": 3620864,
+        "heapUsed": 25044581,
+        "external": 1878848,
+        "arrayBuffers": 0
+      },
+      "executionMs": 328.76709999999997,
+      "responseMs": 411.70019999999994,
+      "cpuMs": 469,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 19861701,
+      "retainedOutputHeap": 25989756,
+      "peakRss": 175087616
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 3,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 111648768,
+        "heapTotal": 3570688,
+        "heapUsed": 3865257,
+        "external": 1783260,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 114917376,
+        "heapTotal": 13302784,
+        "heapUsed": 14324861,
+        "external": 1799489,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 156766208,
+        "heapTotal": 53446656,
+        "heapUsed": 23728401,
+        "external": 1843665,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 174620672,
+        "heapTotal": 53447680,
+        "heapUsed": 23728401,
+        "external": 7643796,
+        "arrayBuffers": 5800131
+      },
+      "retained": {
+        "rss": 175529984,
+        "heapTotal": 28871680,
+        "heapUsed": 29854639,
+        "external": 1827644,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 168812544,
+        "heapTotal": 3620864,
+        "heapUsed": 29854639,
+        "external": 1874883,
+        "arrayBuffers": 0
+      },
+      "executionMs": 310.06719999999996,
+      "responseMs": 393.0557,
+      "cpuMs": 594,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 19863144,
+      "retainedOutputHeap": 15529778,
+      "peakRss": 176693248
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 4,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 110837760,
+        "heapTotal": 3554304,
+        "heapUsed": 3861766,
+        "external": 1782111,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 113836032,
+        "heapTotal": 13286400,
+        "heapUsed": 3861766,
+        "external": 1798752,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 155336704,
+        "heapTotal": 53430272,
+        "heapUsed": 23727456,
+        "external": 1842928,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 171110400,
+        "heapTotal": 53431296,
+        "heapUsed": 23727456,
+        "external": 7643059,
+        "arrayBuffers": 5800131
+      },
+      "retained": {
+        "rss": 173576192,
+        "heapTotal": 28855296,
+        "heapUsed": 29853118,
+        "external": 1827707,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 158818304,
+        "heapTotal": 3620864,
+        "heapUsed": 25036750,
+        "external": 1874946,
+        "arrayBuffers": 0
+      },
+      "executionMs": 325.6151,
+      "responseMs": 409.30359999999996,
+      "cpuMs": 500,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 19865690,
+      "retainedOutputHeap": 25991352,
+      "peakRss": 174759936
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 4,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 111833088,
+        "heapTotal": 3570688,
+        "heapUsed": 3867793,
+        "external": 1783977,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 115265536,
+        "heapTotal": 13302784,
+        "heapUsed": 14325930,
+        "external": 1800198,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 155914240,
+        "heapTotal": 53463040,
+        "heapUsed": 23732478,
+        "external": 1844766,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 175058944,
+        "heapTotal": 53464064,
+        "heapUsed": 23732478,
+        "external": 7644897,
+        "arrayBuffers": 5800131
+      },
+      "retained": {
+        "rss": 154042368,
+        "heapTotal": 28871680,
+        "heapUsed": 29859093,
+        "external": 1829082,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 151232512,
+        "heapTotal": 3620864,
+        "heapUsed": 29859093,
+        "external": 1876328,
+        "arrayBuffers": 0
+      },
+      "executionMs": 336.42760000000004,
+      "responseMs": 422.2267,
+      "cpuMs": 500,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 19864685,
+      "retainedOutputHeap": 15533163,
+      "peakRss": 175214592
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 0,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 131944448,
+        "heapTotal": 3653632,
+        "heapUsed": 4032664,
+        "external": 1866169,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 133054464,
+        "heapTotal": 13893632,
+        "heapUsed": 4032664,
+        "external": 1883978,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 151269376,
+        "heapTotal": 54791168,
+        "heapUsed": 24145306,
+        "external": 1923706,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 182362112,
+        "heapTotal": 54792192,
+        "heapUsed": 41290632,
+        "external": 18807832,
+        "arrayBuffers": 8437631
+      },
+      "retained": {
+        "rss": 182497280,
+        "heapTotal": 27267072,
+        "heapUsed": 41290632,
+        "external": 1911832,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 183865344,
+        "heapTotal": 3703808,
+        "heapUsed": 24692595,
+        "external": 1959095,
+        "arrayBuffers": 0
+      },
+      "executionMs": 403.0204,
+      "responseMs": 499.83939999999996,
+      "cpuMs": 531,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 37257968,
+      "retainedOutputHeap": 37257968,
+      "peakRss": 183885824
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 0,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 133345280,
+        "heapTotal": 3720192,
+        "heapUsed": 4044525,
+        "external": 1868807,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 133808128,
+        "heapTotal": 13960192,
+        "heapUsed": 4044525,
+        "external": 1886488,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 151887872,
+        "heapTotal": 54890496,
+        "heapUsed": 24158688,
+        "external": 1926608,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 191848448,
+        "heapTotal": 54891520,
+        "heapUsed": 41301127,
+        "external": 18810727,
+        "arrayBuffers": 8437631
+      },
+      "retained": {
+        "rss": 192348160,
+        "heapTotal": 27333632,
+        "heapUsed": 41301127,
+        "external": 1915039,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 194265088,
+        "heapTotal": 3770368,
+        "heapUsed": 24705386,
+        "external": 1962309,
+        "arrayBuffers": 0
+      },
+      "executionMs": 363.94039999999995,
+      "responseMs": 461.7727,
+      "cpuMs": 500,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 37256602,
+      "retainedOutputHeap": 37256602,
+      "peakRss": 194285568
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 1,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 134639616,
+        "heapTotal": 3703808,
+        "heapUsed": 4041034,
+        "external": 1869031,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 135118848,
+        "heapTotal": 13943808,
+        "heapUsed": 4041034,
+        "external": 1886808,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 153382912,
+        "heapTotal": 54857728,
+        "heapUsed": 24154928,
+        "external": 1926928,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 184950784,
+        "heapTotal": 54858752,
+        "heapUsed": 41297047,
+        "external": 18811047,
+        "arrayBuffers": 8437631
+      },
+      "retained": {
+        "rss": 185171968,
+        "heapTotal": 27317248,
+        "heapUsed": 41297047,
+        "external": 1915359,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 186613760,
+        "heapTotal": 3753984,
+        "heapUsed": 24702330,
+        "external": 1962629,
+        "arrayBuffers": 0
+      },
+      "executionMs": 358.93460000000005,
+      "responseMs": 452.34849999999994,
+      "cpuMs": 546,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 37256013,
+      "retainedOutputHeap": 37256013,
+      "peakRss": 187289600
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 1,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 132661248,
+        "heapTotal": 3652608,
+        "heapUsed": 4030825,
+        "external": 1867958,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 132820992,
+        "heapTotal": 13892608,
+        "heapUsed": 4030825,
+        "external": 1885699,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 151461888,
+        "heapTotal": 54773760,
+        "heapUsed": 24141827,
+        "external": 1925427,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 182714368,
+        "heapTotal": 54774784,
+        "heapUsed": 41289137,
+        "external": 18809553,
+        "arrayBuffers": 8437631
+      },
+      "retained": {
+        "rss": 182853632,
+        "heapTotal": 27266048,
+        "heapUsed": 41289137,
+        "external": 1913557,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 184176640,
+        "heapTotal": 3702784,
+        "heapUsed": 24690288,
+        "external": 1960820,
+        "arrayBuffers": 0
+      },
+      "executionMs": 406.2963,
+      "responseMs": 510.44230000000005,
+      "cpuMs": 562,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 37258312,
+      "retainedOutputHeap": 37258312,
+      "peakRss": 184197120
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 2,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 132358144,
+        "heapTotal": 3702784,
+        "heapUsed": 4033231,
+        "external": 1867806,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 133894144,
+        "heapTotal": 13942784,
+        "heapUsed": 4033231,
+        "external": 1885579,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 149676032,
+        "heapTotal": 54823936,
+        "heapUsed": 24143643,
+        "external": 1925307,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 183177216,
+        "heapTotal": 54824960,
+        "heapUsed": 41289993,
+        "external": 18809433,
+        "arrayBuffers": 8437631
+      },
+      "retained": {
+        "rss": 181407744,
+        "heapTotal": 27299840,
+        "heapUsed": 41289993,
+        "external": 1914201,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 183185408,
+        "heapTotal": 3736576,
+        "heapUsed": 24693508,
+        "external": 1961464,
+        "arrayBuffers": 0
+      },
+      "executionMs": 400.899,
+      "responseMs": 495.82910000000004,
+      "cpuMs": 562,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 37256762,
+      "retainedOutputHeap": 37256762,
+      "peakRss": 183205888
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 2,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 131702784,
+        "heapTotal": 3720192,
+        "heapUsed": 4039914,
+        "external": 1868471,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 133283840,
+        "heapTotal": 13960192,
+        "heapUsed": 4039914,
+        "external": 1881840,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 151306240,
+        "heapTotal": 54857728,
+        "heapUsed": 24147704,
+        "external": 1921960,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 191283200,
+        "heapTotal": 54858752,
+        "heapUsed": 41293407,
+        "external": 18806079,
+        "arrayBuffers": 8437631
+      },
+      "retained": {
+        "rss": 192024576,
+        "heapTotal": 27317248,
+        "heapUsed": 41293407,
+        "external": 1913995,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 193830912,
+        "heapTotal": 3753984,
+        "heapUsed": 24700550,
+        "external": 1961265,
+        "arrayBuffers": 0
+      },
+      "executionMs": 377.2651,
+      "responseMs": 471.6389,
+      "cpuMs": 515,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 37253493,
+      "retainedOutputHeap": 37253493,
+      "peakRss": 193851392
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 3,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 132734976,
+        "heapTotal": 3719168,
+        "heapUsed": 4039774,
+        "external": 1867822,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 133128192,
+        "heapTotal": 13959168,
+        "heapUsed": 4039774,
+        "external": 1885979,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 151658496,
+        "heapTotal": 54873088,
+        "heapUsed": 24148483,
+        "external": 1928179,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 191488000,
+        "heapTotal": 54874112,
+        "heapUsed": 41293162,
+        "external": 18812298,
+        "arrayBuffers": 8437631
+      },
+      "retained": {
+        "rss": 191750144,
+        "heapTotal": 27316224,
+        "heapUsed": 41293162,
+        "external": 1914534,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 177573888,
+        "heapTotal": 3752960,
+        "heapUsed": 24695681,
+        "external": 1961804,
+        "arrayBuffers": 0
+      },
+      "executionMs": 413.4512000000001,
+      "responseMs": 509.8760000000001,
+      "cpuMs": 594,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 37253388,
+      "retainedOutputHeap": 37253388,
+      "peakRss": 193417216
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 3,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 131649536,
+        "heapTotal": 3686400,
+        "heapUsed": 4028762,
+        "external": 1867074,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 133292032,
+        "heapTotal": 13926400,
+        "heapUsed": 4028762,
+        "external": 1885267,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 151842816,
+        "heapTotal": 54807552,
+        "heapUsed": 24138675,
+        "external": 1924995,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 191479808,
+        "heapTotal": 54808576,
+        "heapUsed": 41286561,
+        "external": 18809121,
+        "arrayBuffers": 8437631
+      },
+      "retained": {
+        "rss": 191762432,
+        "heapTotal": 27299840,
+        "heapUsed": 41286561,
+        "external": 1913153,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 177512448,
+        "heapTotal": 3736576,
+        "heapUsed": 24689756,
+        "external": 1960416,
+        "arrayBuffers": 0
+      },
+      "executionMs": 395.7801,
+      "responseMs": 491.66939999999994,
+      "cpuMs": 563,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 37257799,
+      "retainedOutputHeap": 37257799,
+      "peakRss": 193445888
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 4,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 133435392,
+        "heapTotal": 3652608,
+        "heapUsed": 4031845,
+        "external": 1867190,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 134795264,
+        "heapTotal": 13892608,
+        "heapUsed": 4031845,
+        "external": 1880563,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 153178112,
+        "heapTotal": 54757376,
+        "heapUsed": 24131779,
+        "external": 1920291,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 183865344,
+        "heapTotal": 54758400,
+        "heapUsed": 41281265,
+        "external": 18804417,
+        "arrayBuffers": 8437631
+      },
+      "retained": {
+        "rss": 184336384,
+        "heapTotal": 27249664,
+        "heapUsed": 41281265,
+        "external": 1913493,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 185655296,
+        "heapTotal": 3702784,
+        "heapUsed": 24690416,
+        "external": 1960756,
+        "arrayBuffers": 0
+      },
+      "executionMs": 360.8129,
+      "responseMs": 457.15409999999997,
+      "cpuMs": 531,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 37249420,
+      "retainedOutputHeap": 37249420,
+      "peakRss": 185675776
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 4,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 134295552,
+        "heapTotal": 3686400,
+        "heapUsed": 4040598,
+        "external": 1867763,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 135639040,
+        "heapTotal": 13926400,
+        "heapUsed": 4040598,
+        "external": 1881264,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 153808896,
+        "heapTotal": 54823936,
+        "heapUsed": 24146328,
+        "external": 1921384,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 193187840,
+        "heapTotal": 54824960,
+        "heapUsed": 41292287,
+        "external": 18805503,
+        "arrayBuffers": 8437631
+      },
+      "retained": {
+        "rss": 193810432,
+        "heapTotal": 27299840,
+        "heapUsed": 41292287,
+        "external": 1914155,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 195616768,
+        "heapTotal": 3736576,
+        "heapUsed": 24700710,
+        "external": 1961425,
+        "arrayBuffers": 0
+      },
+      "executionMs": 357.58979999999997,
+      "responseMs": 453.69139999999993,
+      "cpuMs": 516,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 37251689,
+      "retainedOutputHeap": 37251689,
+      "peakRss": 195637248
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 0,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 142045184,
+        "heapTotal": 3933184,
+        "heapUsed": 4468803,
+        "external": 1923032,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 142569472,
+        "heapTotal": 17138688,
+        "heapUsed": 4468803,
+        "external": 1932705,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 165122048,
+        "heapTotal": 66998272,
+        "heapUsed": 29639313,
+        "external": 1969105,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 198893568,
+        "heapTotal": 67015680,
+        "heapUsed": 39182943,
+        "external": 19613122,
+        "arrayBuffers": 8820131
+      },
+      "retained": {
+        "rss": 199405568,
+        "heapTotal": 34083840,
+        "heapUsed": 48015202,
+        "external": 1960559,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 199725056,
+        "heapTotal": 3999744,
+        "heapUsed": 48015202,
+        "external": 1969890,
+        "arrayBuffers": 0
+      },
+      "executionMs": 381.07910000000004,
+      "responseMs": 472.8597,
+      "cpuMs": 516,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 34714140,
+      "retainedOutputHeap": 43546399,
+      "peakRss": 199942144
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 0,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 144175104,
+        "heapTotal": 3933184,
+        "heapUsed": 4509661,
+        "external": 1932349,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 144707584,
+        "heapTotal": 17138688,
+        "heapUsed": 4509661,
+        "external": 1938226,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 167190528,
+        "heapTotal": 66818048,
+        "heapUsed": 29689434,
+        "external": 1974794,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 200761344,
+        "heapTotal": 66819072,
+        "heapUsed": 39218737,
+        "external": 19618804,
+        "arrayBuffers": 8820131
+      },
+      "retained": {
+        "rss": 200896512,
+        "heapTotal": 34100224,
+        "heapUsed": 48050996,
+        "external": 1966041,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 201027584,
+        "heapTotal": 3999744,
+        "heapUsed": 48050996,
+        "external": 1975383,
+        "arrayBuffers": 0
+      },
+      "executionMs": 387.1778,
+      "responseMs": 488.02209999999997,
+      "cpuMs": 531,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 34709076,
+      "retainedOutputHeap": 43541335,
+      "peakRss": 201052160
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 1,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 143736832,
+        "heapTotal": 3934208,
+        "heapUsed": 4507735,
+        "external": 1930958,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 144433152,
+        "heapTotal": 17139712,
+        "heapUsed": 4507735,
+        "external": 1936799,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 167018496,
+        "heapTotal": 66835456,
+        "heapUsed": 29691687,
+        "external": 1973367,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 209858560,
+        "heapTotal": 66836480,
+        "heapUsed": 39222286,
+        "external": 19617377,
+        "arrayBuffers": 8820131
+      },
+      "retained": {
+        "rss": 210001920,
+        "heapTotal": 34101248,
+        "heapUsed": 48054545,
+        "external": 1964614,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 210149376,
+        "heapTotal": 4000768,
+        "heapUsed": 48054545,
+        "external": 1973952,
+        "arrayBuffers": 0
+      },
+      "executionMs": 398.03310000000005,
+      "responseMs": 492.3713000000001,
+      "cpuMs": 594,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 34714551,
+      "retainedOutputHeap": 43546810,
+      "peakRss": 210173952
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 1,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 144531456,
+        "heapTotal": 3915776,
+        "heapUsed": 4480649,
+        "external": 1930784,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 145010688,
+        "heapTotal": 17121280,
+        "heapUsed": 4480649,
+        "external": 1936849,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 167452672,
+        "heapTotal": 66866176,
+        "heapUsed": 29655969,
+        "external": 1973249,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 208957440,
+        "heapTotal": 66867200,
+        "heapUsed": 39194351,
+        "external": 19617266,
+        "arrayBuffers": 8820131
+      },
+      "retained": {
+        "rss": 209235968,
+        "heapTotal": 34066432,
+        "heapUsed": 48026610,
+        "external": 1964739,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 209502208,
+        "heapTotal": 3982336,
+        "heapUsed": 48026610,
+        "external": 1974074,
+        "arrayBuffers": 0
+      },
+      "executionMs": 383.5775,
+      "responseMs": 477.1118,
+      "cpuMs": 531,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 34713702,
+      "retainedOutputHeap": 43545961,
+      "peakRss": 209522688
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 2,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 141078528,
+        "heapTotal": 3916800,
+        "heapUsed": 4474754,
+        "external": 1925041,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 141836288,
+        "heapTotal": 17122304,
+        "heapUsed": 4474754,
+        "external": 1931170,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 164831232,
+        "heapTotal": 66867200,
+        "heapUsed": 29650546,
+        "external": 1967570,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 205602816,
+        "heapTotal": 66884608,
+        "heapUsed": 39188928,
+        "external": 19611587,
+        "arrayBuffers": 8820131
+      },
+      "retained": {
+        "rss": 205615104,
+        "heapTotal": 34067456,
+        "heapUsed": 48021187,
+        "external": 1959056,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 205897728,
+        "heapTotal": 3983360,
+        "heapUsed": 48021187,
+        "external": 1968387,
+        "arrayBuffers": 0
+      },
+      "executionMs": 369.0796,
+      "responseMs": 465.35569999999996,
+      "cpuMs": 469,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 34714174,
+      "retainedOutputHeap": 43546433,
+      "peakRss": 208363520
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 2,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 140095488,
+        "heapTotal": 3933184,
+        "heapUsed": 4475088,
+        "external": 1924018,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 140771328,
+        "heapTotal": 17138688,
+        "heapUsed": 4475088,
+        "external": 1933687,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 163078144,
+        "heapTotal": 66916352,
+        "heapUsed": 29667711,
+        "external": 1970255,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 195985408,
+        "heapTotal": 66917376,
+        "heapUsed": 39204790,
+        "external": 19614265,
+        "arrayBuffers": 8820131
+      },
+      "retained": {
+        "rss": 196186112,
+        "heapTotal": 34100224,
+        "heapUsed": 48037049,
+        "external": 1961502,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 196444160,
+        "heapTotal": 3999744,
+        "heapUsed": 48037049,
+        "external": 1970840,
+        "arrayBuffers": 0
+      },
+      "executionMs": 360.5843,
+      "responseMs": 456.35630000000003,
+      "cpuMs": 516,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 34729702,
+      "retainedOutputHeap": 43561961,
+      "peakRss": 197619712
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 3,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 142725120,
+        "heapTotal": 3950592,
+        "heapUsed": 4494297,
+        "external": 1924879,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 143335424,
+        "heapTotal": 17156096,
+        "heapUsed": 4494297,
+        "external": 1934556,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 166219776,
+        "heapTotal": 66802688,
+        "heapUsed": 29688868,
+        "external": 1971124,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 198463488,
+        "heapTotal": 66820096,
+        "heapUsed": 39218171,
+        "external": 19615134,
+        "arrayBuffers": 8820131
+      },
+      "retained": {
+        "rss": 198729728,
+        "heapTotal": 34117632,
+        "heapUsed": 48050430,
+        "external": 1962403,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 198897664,
+        "heapTotal": 4017152,
+        "heapUsed": 48050430,
+        "external": 1971741,
+        "arrayBuffers": 0
+      },
+      "executionMs": 403.5691,
+      "responseMs": 504.5012,
+      "cpuMs": 532,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 34723874,
+      "retainedOutputHeap": 43556133,
+      "peakRss": 198918144
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 3,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 143286272,
+        "heapTotal": 3900416,
+        "heapUsed": 4477136,
+        "external": 1928259,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 143982592,
+        "heapTotal": 17105920,
+        "heapUsed": 4477136,
+        "external": 1934232,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 166969344,
+        "heapTotal": 66899968,
+        "heapUsed": 29640392,
+        "external": 1970632,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 199630848,
+        "heapTotal": 66917376,
+        "heapUsed": 39182726,
+        "external": 19614649,
+        "arrayBuffers": 8820131
+      },
+      "retained": {
+        "rss": 199991296,
+        "heapTotal": 34051072,
+        "heapUsed": 48014985,
+        "external": 1962118,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 200196096,
+        "heapTotal": 3966976,
+        "heapUsed": 48014985,
+        "external": 1971449,
+        "arrayBuffers": 0
+      },
+      "executionMs": 397.6282,
+      "responseMs": 491.4665,
+      "cpuMs": 500,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 34705590,
+      "retainedOutputHeap": 43537849,
+      "peakRss": 200220672
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 4,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 142815232,
+        "heapTotal": 3916800,
+        "heapUsed": 4479615,
+        "external": 1929924,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 143429632,
+        "heapTotal": 17122304,
+        "heapUsed": 4479615,
+        "external": 1935797,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 166400000,
+        "heapTotal": 66916352,
+        "heapUsed": 29645445,
+        "external": 1972197,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 199901184,
+        "heapTotal": 66933760,
+        "heapUsed": 39186419,
+        "external": 19616214,
+        "arrayBuffers": 8820131
+      },
+      "retained": {
+        "rss": 200036352,
+        "heapTotal": 34067456,
+        "heapUsed": 48018678,
+        "external": 1963651,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 200282112,
+        "heapTotal": 3999744,
+        "heapUsed": 48018678,
+        "external": 1972982,
+        "arrayBuffers": 0
+      },
+      "executionMs": 376.2977000000001,
+      "responseMs": 467.624,
+      "cpuMs": 499,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 34706804,
+      "retainedOutputHeap": 43539063,
+      "peakRss": 201039872
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 4,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.3.0",
+        "bun": "1.3.14",
+        "boringssl": "0c5fce43b7ed5eb6001487ee48ac65766f5ddcd1",
+        "openssl": "1.1.0",
+        "llhttp": "9.3.0",
+        "libarchive": "ded82291ab41d5e355831b96b0e1ff49e24d8939",
+        "mimalloc": "f15aecb94fc8096008bf87b90c53ed682026914a",
+        "picohttpparser": "066d2b1e9ab820703db0837a7255d92d30f0c9f5",
+        "uwebsockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "webkit": "5488984d20e0dbfe4be2c3ba8fb18eb81a5e0e8b",
+        "zig": "04e7f6ac1e009525bc00934f20199c68f04e0a24",
+        "zlib": "12731092979c6d07f42da27da673a9f6c7b13586",
+        "tinycc": "12882eee073cfe5c7621bcfadf679e1372d4537b",
+        "lolhtml": "77127cd2b8545998756e8d64e36ee2313c4bb312",
+        "ares": "3ac47ee46edd8ea40370222f91613fc16c434853",
+        "libdeflate": "c8c56a20f8f621e6a966b716b31f1dedab6a41e3",
+        "usockets": "0d9b296af33f2b851fcbf4df3e9ec89751734ba4",
+        "lshpack": "8905c024b6d052f083a3d11d0a169b3c2735c8a1",
+        "zstd": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+        "v8": "13.6.233.10-node.18",
+        "uv": "1.51.1-dev",
+        "napi": "10",
+        "icu": "73.2",
+        "unicode": "15.0",
+        "modules": "137"
+      },
+      "idle": {
+        "rss": 140333056,
+        "heapTotal": 3949568,
+        "heapUsed": 4513717,
+        "external": 1926387,
+        "arrayBuffers": 0
+      },
+      "inputReady": {
+        "rss": 141094912,
+        "heapTotal": 17155072,
+        "heapUsed": 4513717,
+        "external": 1936056,
+        "arrayBuffers": 0
+      },
+      "executed": {
+        "rss": 163450880,
+        "heapTotal": 66785280,
+        "heapUsed": 29683440,
+        "external": 1972624,
+        "arrayBuffers": 0
+      },
+      "serialized": {
+        "rss": 196063232,
+        "heapTotal": 66802688,
+        "heapUsed": 39219340,
+        "external": 19621183,
+        "arrayBuffers": 8820131
+      },
+      "retained": {
+        "rss": 196284416,
+        "heapTotal": 34116608,
+        "heapUsed": 48046434,
+        "external": 1963871,
+        "arrayBuffers": 0
+      },
+      "released": {
+        "rss": 196427776,
+        "heapTotal": 4016128,
+        "heapUsed": 48046434,
+        "external": 1973209,
+        "arrayBuffers": 0
+      },
+      "executionMs": 406.3909,
+      "responseMs": 501.43859999999995,
+      "cpuMs": 531,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 34705623,
+      "retainedOutputHeap": 43532717,
+      "peakRss": 196448256
+    }
+  ],
+  "completedAt": "2026-10-27T01:48:34.433Z"
+}

@@ -1,0 +1,3577 @@
+{
+  "engine": "node",
+  "executable": "C:/Users/noamy/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe",
+  "source": {
+    "outputs/graphql-js-study/shape-case.mjs": "41a958e3e7bef1afec6f29eb7f864ab3da0903b39dd416c9b8c99c5ef26abfb7",
+    "outputs/graphql-js-study/shape-run.mjs": "a6b9dd3f2da32bd99c8e451af4d28359fc1fd518588d57da55df5ca96de8792b",
+    "work/graphql-js-pr/src/execution/Executor.ts": "7aa74fafa7998ecf3875aadbf922f8a5f88bc44660f072c032a82c622f132737",
+    "work/graphql-js-pr/src/jsutils/promiseForObject.ts": "683c884526558594df7a7bd87e782985f47b96446708474be4a00f281cf92a9a",
+    "work/graphql-js-pr/src/jsutils/CompactExecutionResultMap.ts": "a213fd03fd790a81309807077ffafd2496bd02fea49a2c672b300656b8d11fd1",
+    "work/graphql-js-study/src/execution/Executor.ts": "f71e77697b8f0c7424db885e1893f13d3d3fa7dae72b2028d87b66c7a552fb2d",
+    "work/graphql-js-study/src/jsutils/promiseForObject.ts": "8dbf40882f90ac982ea00748194eeed3af39fe9334b8fcc9e5bb8cb027d24e3d"
+  },
+  "startedAt": "2026-10-27T01:47:15.935Z",
+  "events": [
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 0,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 80932864,
+        "heapTotal": 22876160,
+        "heapUsed": 13266424,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 83324928,
+        "heapTotal": 37310464,
+        "heapUsed": 19651880,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 130031616,
+        "heapTotal": 71245824,
+        "heapUsed": 51568528,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 133926912,
+        "heapTotal": 74506240,
+        "heapUsed": 45091584,
+        "external": 11085364,
+        "arrayBuffers": 1043670
+      },
+      "retained": {
+        "rss": 131031040,
+        "heapTotal": 73617408,
+        "heapUsed": 38955584,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 128876544,
+        "heapTotal": 48041984,
+        "heapUsed": 13259744,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 83.82300000000004,
+      "responseMs": 109.80590000000001,
+      "cpuMs": 219,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 38302104,
+      "retainedOutputHeap": 19303704,
+      "peakRss": 134914048
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 0,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 80719872,
+        "heapTotal": 23138304,
+        "heapUsed": 13278416,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 83771392,
+        "heapTotal": 37834752,
+        "heapUsed": 19663872,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 118841344,
+        "heapTotal": 58847232,
+        "heapUsed": 37648360,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 119848960,
+        "heapTotal": 59748352,
+        "heapUsed": 38556056,
+        "external": 11085364,
+        "arrayBuffers": 1043670
+      },
+      "retained": {
+        "rss": 116969472,
+        "heapTotal": 58413056,
+        "heapUsed": 23768096,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 114933760,
+        "heapTotal": 48566272,
+        "heapUsed": 13272024,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 75.85419999999999,
+      "responseMs": 83.7253,
+      "cpuMs": 126,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 25277640,
+      "retainedOutputHeap": 4104224,
+      "peakRss": 120770560
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 1,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 81256448,
+        "heapTotal": 23138304,
+        "heapUsed": 13273656,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 84189184,
+        "heapTotal": 37834752,
+        "heapUsed": 19659112,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 118808576,
+        "heapTotal": 59109376,
+        "heapUsed": 37590872,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 119685120,
+        "heapTotal": 60010496,
+        "heapUsed": 38498568,
+        "external": 11085364,
+        "arrayBuffers": 1043670
+      },
+      "retained": {
+        "rss": 117800960,
+        "heapTotal": 58413056,
+        "heapUsed": 23767912,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 115539968,
+        "heapTotal": 48566272,
+        "heapUsed": 13271840,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 78.34300000000002,
+      "responseMs": 86.8399,
+      "cpuMs": 203,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 25224912,
+      "retainedOutputHeap": 4108800,
+      "peakRss": 121384960
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 1,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 81379328,
+        "heapTotal": 23400448,
+        "heapUsed": 13266528,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 83714048,
+        "heapTotal": 38096896,
+        "heapUsed": 19651984,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 129585152,
+        "heapTotal": 70983680,
+        "heapUsed": 51987904,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 134467584,
+        "heapTotal": 73719808,
+        "heapUsed": 45537984,
+        "external": 11085364,
+        "arrayBuffers": 1043670
+      },
+      "retained": {
+        "rss": 131440640,
+        "heapTotal": 73617408,
+        "heapUsed": 38955616,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 129634304,
+        "heapTotal": 48566272,
+        "heapUsed": 13259776,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 71.09339999999997,
+      "responseMs": 94.71499999999997,
+      "cpuMs": 234,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 38721376,
+      "retainedOutputHeap": 19303632,
+      "peakRss": 135327744
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 2,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 80642048,
+        "heapTotal": 23138304,
+        "heapUsed": 13271136,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 83890176,
+        "heapTotal": 37834752,
+        "heapUsed": 19656592,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 132374528,
+        "heapTotal": 73080832,
+        "heapUsed": 40811328,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 134062080,
+        "heapTotal": 73981952,
+        "heapUsed": 46519080,
+        "external": 11085364,
+        "arrayBuffers": 1043670
+      },
+      "retained": {
+        "rss": 131538944,
+        "heapTotal": 73617408,
+        "heapUsed": 38965328,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 129810432,
+        "heapTotal": 48566272,
+        "heapUsed": 13269488,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 77.1526,
+      "responseMs": 99.79700000000003,
+      "cpuMs": 219,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 33247944,
+      "retainedOutputHeap": 19308736,
+      "peakRss": 135213056
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 2,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 80760832,
+        "heapTotal": 23138304,
+        "heapUsed": 13273576,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 83361792,
+        "heapTotal": 37834752,
+        "heapUsed": 19659032,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 117919744,
+        "heapTotal": 58847232,
+        "heapUsed": 37408848,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 119300096,
+        "heapTotal": 59748352,
+        "heapUsed": 38316544,
+        "external": 11085364,
+        "arrayBuffers": 1043670
+      },
+      "retained": {
+        "rss": 116486144,
+        "heapTotal": 58413056,
+        "heapUsed": 23767832,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 114905088,
+        "heapTotal": 48304128,
+        "heapUsed": 13271760,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 77.36840000000001,
+      "responseMs": 85.58869999999996,
+      "cpuMs": 157,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 25042968,
+      "retainedOutputHeap": 4108800,
+      "peakRss": 120397824
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 3,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 80179200,
+        "heapTotal": 23400448,
+        "heapUsed": 13273752,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 83546112,
+        "heapTotal": 38096896,
+        "heapUsed": 19659208,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 118214656,
+        "heapTotal": 58847232,
+        "heapUsed": 37440696,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 119767040,
+        "heapTotal": 59748352,
+        "heapUsed": 38348392,
+        "external": 11085364,
+        "arrayBuffers": 1043670
+      },
+      "retained": {
+        "rss": 116633600,
+        "heapTotal": 58413056,
+        "heapUsed": 23768224,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 115175424,
+        "heapTotal": 48566272,
+        "heapUsed": 13272152,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 77.80520000000001,
+      "responseMs": 85.85820000000001,
+      "cpuMs": 188,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 25074640,
+      "retainedOutputHeap": 4109016,
+      "peakRss": 120709120
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 3,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 81244160,
+        "heapTotal": 22876160,
+        "heapUsed": 13270944,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 84299776,
+        "heapTotal": 37572608,
+        "heapUsed": 19656400,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 129171456,
+        "heapTotal": 70721536,
+        "heapUsed": 52062064,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 133251072,
+        "heapTotal": 74244096,
+        "heapUsed": 45653632,
+        "external": 11085364,
+        "arrayBuffers": 1043670
+      },
+      "retained": {
+        "rss": 130502656,
+        "heapTotal": 73617408,
+        "heapUsed": 38965184,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 129015808,
+        "heapTotal": 48041984,
+        "heapUsed": 13269344,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 74.55609999999996,
+      "responseMs": 101.69039999999995,
+      "cpuMs": 141,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 38791120,
+      "retainedOutputHeap": 19308784,
+      "peakRss": 134479872
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 4,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 80920576,
+        "heapTotal": 22876160,
+        "heapUsed": 13271408,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 83361792,
+        "heapTotal": 37572608,
+        "heapUsed": 19656864,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 131829760,
+        "heapTotal": 73080832,
+        "heapUsed": 41033944,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 133349376,
+        "heapTotal": 73981952,
+        "heapUsed": 46741696,
+        "external": 11085364,
+        "arrayBuffers": 1043670
+      },
+      "retained": {
+        "rss": 131092480,
+        "heapTotal": 73355264,
+        "heapUsed": 38965408,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 128823296,
+        "heapTotal": 48304128,
+        "heapUsed": 13269568,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 74.87649999999996,
+      "responseMs": 97.08319999999998,
+      "cpuMs": 172,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 33470288,
+      "retainedOutputHeap": 19308544,
+      "peakRss": 134623232
+    },
+    {
+      "config": {
+        "width": 1,
+        "rows": 100000,
+        "rep": 4,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 80687104,
+        "heapTotal": 23138304,
+        "heapUsed": 13268520,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 83443712,
+        "heapTotal": 37834752,
+        "heapUsed": 19653976,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 118009856,
+        "heapTotal": 59109376,
+        "heapUsed": 37311800,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 119595008,
+        "heapTotal": 60010496,
+        "heapUsed": 38219496,
+        "external": 11085364,
+        "arrayBuffers": 1043670
+      },
+      "retained": {
+        "rss": 116662272,
+        "heapTotal": 58937344,
+        "heapUsed": 23757936,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 114855936,
+        "heapTotal": 48566272,
+        "heapUsed": 13261864,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 80.70280000000002,
+      "responseMs": 89.09559999999999,
+      "cpuMs": 140,
+      "bytes": 900019,
+      "sha256": "47c41aef92ad18b8ab3f4e571ad2da2b84bd0e9419c37529a89b4d03b4b18661",
+      "addedHeap": 24950976,
+      "retainedOutputHeap": 4103960,
+      "peakRss": 120483840
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 0,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 82411520,
+        "heapTotal": 23662592,
+        "heapUsed": 13415632,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 94990336,
+        "heapTotal": 60641280,
+        "heapUsed": 26108728,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 169611264,
+        "heapTotal": 109441024,
+        "heapUsed": 83030264,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 182165504,
+        "heapTotal": 116555776,
+        "heapUsed": 89519136,
+        "external": 15985364,
+        "arrayBuffers": 5943670
+      },
+      "retained": {
+        "rss": 169918464,
+        "heapTotal": 108744704,
+        "heapUsed": 74228112,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 167575552,
+        "heapTotal": 48828416,
+        "heapUsed": 13332312,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 255.62210000000005,
+      "responseMs": 333.94280000000003,
+      "cpuMs": 391,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 76103504,
+      "retainedOutputHeap": 48119384,
+      "peakRss": 183107584
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 0,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 81825792,
+        "heapTotal": 23662592,
+        "heapUsed": 13342304,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 95088640,
+        "heapTotal": 60641280,
+        "heapUsed": 26096000,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 131092480,
+        "heapTotal": 71692288,
+        "heapUsed": 42198888,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 142782464,
+        "heapTotal": 77496320,
+        "heapUsed": 48006584,
+        "external": 15985364,
+        "arrayBuffers": 5943670
+      },
+      "retained": {
+        "rss": 129937408,
+        "heapTotal": 70733824,
+        "heapUsed": 35833312,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 128008192,
+        "heapTotal": 48566272,
+        "heapUsed": 13336552,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 214.58179999999993,
+      "responseMs": 267.2478,
+      "cpuMs": 312,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 34664280,
+      "retainedOutputHeap": 9737312,
+      "peakRss": 143052800
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 1,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 81526784,
+        "heapTotal": 23662592,
+        "heapUsed": 13346464,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 94539776,
+        "heapTotal": 60641280,
+        "heapUsed": 26095320,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 130965504,
+        "heapTotal": 71692288,
+        "heapUsed": 42136624,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 142299136,
+        "heapTotal": 77496320,
+        "heapUsed": 47944320,
+        "external": 15985364,
+        "arrayBuffers": 5943670
+      },
+      "retained": {
+        "rss": 129404928,
+        "heapTotal": 70733824,
+        "heapUsed": 35832632,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 128417792,
+        "heapTotal": 48828416,
+        "heapUsed": 13335680,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 217.33249999999998,
+      "responseMs": 257.15020000000004,
+      "cpuMs": 281,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 34597856,
+      "retainedOutputHeap": 9737312,
+      "peakRss": 142589952
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 1,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 81088512,
+        "heapTotal": 23400448,
+        "heapUsed": 13343824,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 94937088,
+        "heapTotal": 60641280,
+        "heapUsed": 26092680,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 169988096,
+        "heapTotal": 109178880,
+        "heapUsed": 84600112,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 182734848,
+        "heapTotal": 116031488,
+        "heapUsed": 91223568,
+        "external": 15985364,
+        "arrayBuffers": 5943670
+      },
+      "retained": {
+        "rss": 170348544,
+        "heapTotal": 109268992,
+        "heapUsed": 74228408,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 168206336,
+        "heapTotal": 48566272,
+        "heapUsed": 13332416,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 276.1384,
+      "responseMs": 368.1003,
+      "cpuMs": 516,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 77879744,
+      "retainedOutputHeap": 48135728,
+      "peakRss": 183443456
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 2,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 81113088,
+        "heapTotal": 23662592,
+        "heapUsed": 13339680,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 94392320,
+        "heapTotal": 60641280,
+        "heapUsed": 26093376,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 168882176,
+        "heapTotal": 109441024,
+        "heapUsed": 83244600,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 181653504,
+        "heapTotal": 116293632,
+        "heapUsed": 89765448,
+        "external": 15985364,
+        "arrayBuffers": 5943670
+      },
+      "retained": {
+        "rss": 169222144,
+        "heapTotal": 109006848,
+        "heapUsed": 74229104,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 167071744,
+        "heapTotal": 48828416,
+        "heapUsed": 13333304,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 241.74540000000002,
+      "responseMs": 328.7252,
+      "cpuMs": 359,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 76425768,
+      "retainedOutputHeap": 48135728,
+      "peakRss": 182411264
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 2,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 81469440,
+        "heapTotal": 23400448,
+        "heapUsed": 13342232,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 94842880,
+        "heapTotal": 60641280,
+        "heapUsed": 26095928,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 130424832,
+        "heapTotal": 71430144,
+        "heapUsed": 41728352,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 142356480,
+        "heapTotal": 77234176,
+        "heapUsed": 47536048,
+        "external": 15985364,
+        "arrayBuffers": 5943670
+      },
+      "retained": {
+        "rss": 129736704,
+        "heapTotal": 70471680,
+        "heapUsed": 35833240,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 127991808,
+        "heapTotal": 48566272,
+        "heapUsed": 13336480,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 223.26209999999998,
+      "responseMs": 318.79699999999997,
+      "cpuMs": 375,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 34193816,
+      "retainedOutputHeap": 9737312,
+      "peakRss": 142970880
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 3,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 82616320,
+        "heapTotal": 23400448,
+        "heapUsed": 13403936,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 94908416,
+        "heapTotal": 60641280,
+        "heapUsed": 26103488,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 130895872,
+        "heapTotal": 71692288,
+        "heapUsed": 42344176,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 142266368,
+        "heapTotal": 77496320,
+        "heapUsed": 48151872,
+        "external": 15985364,
+        "arrayBuffers": 5943670
+      },
+      "retained": {
+        "rss": 129458176,
+        "heapTotal": 70733824,
+        "heapUsed": 35824504,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 127832064,
+        "heapTotal": 48304128,
+        "heapUsed": 13327552,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 217.8453,
+      "responseMs": 260.1392,
+      "cpuMs": 266,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 34747936,
+      "retainedOutputHeap": 9721016,
+      "peakRss": 142573568
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 3,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 80986112,
+        "heapTotal": 23400448,
+        "heapUsed": 13339576,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 94941184,
+        "heapTotal": 60641280,
+        "heapUsed": 26093272,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 168853504,
+        "heapTotal": 109441024,
+        "heapUsed": 84188016,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 181960704,
+        "heapTotal": 116293632,
+        "heapUsed": 90759832,
+        "external": 15985364,
+        "arrayBuffers": 5943670
+      },
+      "retained": {
+        "rss": 169713664,
+        "heapTotal": 109006848,
+        "heapUsed": 74229000,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 167079936,
+        "heapTotal": 48566272,
+        "heapUsed": 13333200,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 252.6712,
+      "responseMs": 335.65740000000005,
+      "cpuMs": 421,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 77420256,
+      "retainedOutputHeap": 48135728,
+      "peakRss": 182693888
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 4,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 80859136,
+        "heapTotal": 23400448,
+        "heapUsed": 13339608,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 95240192,
+        "heapTotal": 60641280,
+        "heapUsed": 26093304,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 169308160,
+        "heapTotal": 109178880,
+        "heapUsed": 84158088,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 181850112,
+        "heapTotal": 116031488,
+        "heapUsed": 90698216,
+        "external": 15985364,
+        "arrayBuffers": 5943670
+      },
+      "retained": {
+        "rss": 169062400,
+        "heapTotal": 109006848,
+        "heapUsed": 74229032,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 167071744,
+        "heapTotal": 48566272,
+        "heapUsed": 13333232,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 250.12810000000002,
+      "responseMs": 340.8405,
+      "cpuMs": 390,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 77358608,
+      "retainedOutputHeap": 48135728,
+      "peakRss": 182984704
+    },
+    {
+      "config": {
+        "width": 8,
+        "rows": 100000,
+        "rep": 4,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 81559552,
+        "heapTotal": 23400448,
+        "heapUsed": 13342328,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 94314496,
+        "heapTotal": 60903424,
+        "heapUsed": 26096024,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 130588672,
+        "heapTotal": 71692288,
+        "heapUsed": 43336384,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 142204928,
+        "heapTotal": 77496320,
+        "heapUsed": 49144080,
+        "external": 15985364,
+        "arrayBuffers": 5943670
+      },
+      "retained": {
+        "rss": 129249280,
+        "heapTotal": 70733824,
+        "heapUsed": 35833336,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 128311296,
+        "heapTotal": 48566272,
+        "heapUsed": 13336576,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 271.70320000000004,
+      "responseMs": 319.66769999999997,
+      "cpuMs": 359,
+      "bytes": 5800019,
+      "sha256": "67ea2058fb4da60c0fc475a54f0f5d509ecfa5ac409dd868fa7b89d75efdef67",
+      "addedHeap": 35801752,
+      "retainedOutputHeap": 9737312,
+      "peakRss": 142630912
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 0,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 89796608,
+        "heapTotal": 31789056,
+        "heapUsed": 13413928,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 92327936,
+        "heapTotal": 58519552,
+        "heapUsed": 23362784,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 168226816,
+        "heapTotal": 108523520,
+        "heapUsed": 84098704,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 187408384,
+        "heapTotal": 117747712,
+        "heapUsed": 94170328,
+        "external": 18622864,
+        "arrayBuffers": 8581170
+      },
+      "retained": {
+        "rss": 170696704,
+        "heapTotal": 109649920,
+        "heapUsed": 74396600,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 169254912,
+        "heapTotal": 48566272,
+        "heapUsed": 13395064,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 302.64470000000006,
+      "responseMs": 420.3927,
+      "cpuMs": 516,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 80756400,
+      "retainedOutputHeap": 51033816,
+      "peakRss": 187756544
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 0,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 81375232,
+        "heapTotal": 23400448,
+        "heapUsed": 13419184,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 92160000,
+        "heapTotal": 58257408,
+        "heapUsed": 23372880,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 168644608,
+        "heapTotal": 108261376,
+        "heapUsed": 82744568,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 187539456,
+        "heapTotal": 117747712,
+        "heapUsed": 92675448,
+        "external": 18622864,
+        "arrayBuffers": 8581170
+      },
+      "retained": {
+        "rss": 170741760,
+        "heapTotal": 109125632,
+        "heapUsed": 74407800,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 168714240,
+        "heapTotal": 48566272,
+        "heapUsed": 13406024,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 310.50809999999996,
+      "responseMs": 420.6573,
+      "cpuMs": 562,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 79256264,
+      "retainedOutputHeap": 51034920,
+      "peakRss": 187736064
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 1,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 81633280,
+        "heapTotal": 23662592,
+        "heapUsed": 13418464,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 92712960,
+        "heapTotal": 58257408,
+        "heapUsed": 23372160,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 168288256,
+        "heapTotal": 108261376,
+        "heapUsed": 83023960,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 187252736,
+        "heapTotal": 117747712,
+        "heapUsed": 93001008,
+        "external": 18622864,
+        "arrayBuffers": 8581170
+      },
+      "retained": {
+        "rss": 170180608,
+        "heapTotal": 109125632,
+        "heapUsed": 74407960,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 168411136,
+        "heapTotal": 48828416,
+        "heapUsed": 13406184,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 355.7474,
+      "responseMs": 484.78130000000004,
+      "cpuMs": 641,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 79582544,
+      "retainedOutputHeap": 51035800,
+      "peakRss": 187252736
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 1,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 81354752,
+        "heapTotal": 23662592,
+        "heapUsed": 13417392,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 92110848,
+        "heapTotal": 57995264,
+        "heapUsed": 23371088,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 167735296,
+        "heapTotal": 108261376,
+        "heapUsed": 85128552,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 186888192,
+        "heapTotal": 117485568,
+        "heapUsed": 95265928,
+        "external": 18622864,
+        "arrayBuffers": 8581170
+      },
+      "retained": {
+        "rss": 169967616,
+        "heapTotal": 109387776,
+        "heapUsed": 74405144,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 167833600,
+        "heapTotal": 48828416,
+        "heapUsed": 13403608,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 335.7751,
+      "responseMs": 475.0845,
+      "cpuMs": 688,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 81848536,
+      "retainedOutputHeap": 51034056,
+      "peakRss": 187031552
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 2,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 81035264,
+        "heapTotal": 23138304,
+        "heapUsed": 13408848,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 91992064,
+        "heapTotal": 57995264,
+        "heapUsed": 23357704,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 168062976,
+        "heapTotal": 108261376,
+        "heapUsed": 84673744,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 186765312,
+        "heapTotal": 117485568,
+        "heapUsed": 94799240,
+        "external": 18622864,
+        "arrayBuffers": 8581170
+      },
+      "retained": {
+        "rss": 169779200,
+        "heapTotal": 109387776,
+        "heapUsed": 74394096,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 168407040,
+        "heapTotal": 48304128,
+        "heapUsed": 13391792,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 606.7588,
+      "responseMs": 893.5007999999999,
+      "cpuMs": 922,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 81390392,
+      "retainedOutputHeap": 51036392,
+      "peakRss": 186834944
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 2,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 81604608,
+        "heapTotal": 23400448,
+        "heapUsed": 13419056,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 92545024,
+        "heapTotal": 58257408,
+        "heapUsed": 23372752,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 168431616,
+        "heapTotal": 108261376,
+        "heapUsed": 83543200,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 187138048,
+        "heapTotal": 117747712,
+        "heapUsed": 93549216,
+        "external": 18622864,
+        "arrayBuffers": 8581170
+      },
+      "retained": {
+        "rss": 170168320,
+        "heapTotal": 109649920,
+        "heapUsed": 74407672,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 168382464,
+        "heapTotal": 48566272,
+        "heapUsed": 13405896,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 377.28009999999995,
+      "responseMs": 501.9851,
+      "cpuMs": 578,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 80130160,
+      "retainedOutputHeap": 51034920,
+      "peakRss": 187170816
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 3,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 81326080,
+        "heapTotal": 23400448,
+        "heapUsed": 13419144,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 92356608,
+        "heapTotal": 58257408,
+        "heapUsed": 23372840,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 168722432,
+        "heapTotal": 108261376,
+        "heapUsed": 82946464,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 187633664,
+        "heapTotal": 117747712,
+        "heapUsed": 92917448,
+        "external": 18622864,
+        "arrayBuffers": 8581170
+      },
+      "retained": {
+        "rss": 170610688,
+        "heapTotal": 109125632,
+        "heapUsed": 74407760,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 168460288,
+        "heapTotal": 48566272,
+        "heapUsed": 13405984,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 354.3501,
+      "responseMs": 479.7810999999999,
+      "cpuMs": 594,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 79498304,
+      "retainedOutputHeap": 51034920,
+      "peakRss": 187682816
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 3,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 81657856,
+        "heapTotal": 23400448,
+        "heapUsed": 13414464,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 92717056,
+        "heapTotal": 57733120,
+        "heapUsed": 23362304,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 168366080,
+        "heapTotal": 108261376,
+        "heapUsed": 85071824,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 187060224,
+        "heapTotal": 117223424,
+        "heapUsed": 95185216,
+        "external": 18622864,
+        "arrayBuffers": 8581170
+      },
+      "retained": {
+        "rss": 170131456,
+        "heapTotal": 109125632,
+        "heapUsed": 74397240,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 168169472,
+        "heapTotal": 48566272,
+        "heapUsed": 13394936,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 325.1997,
+      "responseMs": 454.9035,
+      "cpuMs": 625,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 81770752,
+      "retainedOutputHeap": 51034936,
+      "peakRss": 187191296
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 4,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 82149376,
+        "heapTotal": 23400448,
+        "heapUsed": 13416704,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 92798976,
+        "heapTotal": 57995264,
+        "heapUsed": 23370400,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 168579072,
+        "heapTotal": 108523520,
+        "heapUsed": 85073744,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 186646528,
+        "heapTotal": 117485568,
+        "heapUsed": 95209360,
+        "external": 18622864,
+        "arrayBuffers": 8581170
+      },
+      "retained": {
+        "rss": 169705472,
+        "heapTotal": 109387776,
+        "heapUsed": 74405336,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 168259584,
+        "heapTotal": 48566272,
+        "heapUsed": 13403800,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 335.07539999999995,
+      "responseMs": 468.98810000000003,
+      "cpuMs": 562,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 81792656,
+      "retainedOutputHeap": 51034936,
+      "peakRss": 186650624
+    },
+    {
+      "config": {
+        "width": 32,
+        "rows": 31250,
+        "rep": 4,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 81543168,
+        "heapTotal": 23138304,
+        "heapUsed": 13416856,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 92463104,
+        "heapTotal": 57995264,
+        "heapUsed": 23365712,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 168742912,
+        "heapTotal": 108261376,
+        "heapUsed": 82830112,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 187523072,
+        "heapTotal": 117747712,
+        "heapUsed": 92842024,
+        "external": 18622864,
+        "arrayBuffers": 8581170
+      },
+      "retained": {
+        "rss": 170663936,
+        "heapTotal": 109387776,
+        "heapUsed": 74400632,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 168742912,
+        "heapTotal": 48304128,
+        "heapUsed": 13398088,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 353.70270000000005,
+      "responseMs": 490.1889,
+      "cpuMs": 640,
+      "bytes": 8437519,
+      "sha256": "76c455f492c0a45b335135ad42714502b65b82b66bfa894164c6922da5dc4f8f",
+      "addedHeap": 79425168,
+      "retainedOutputHeap": 51034920,
+      "peakRss": 187731968
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 0,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 91582464,
+        "heapTotal": 31789056,
+        "heapUsed": 13594744,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 91840512,
+        "heapTotal": 57217024,
+        "heapUsed": 22028440,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 179998720,
+        "heapTotal": 119345152,
+        "heapUsed": 97091664,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 199561216,
+        "heapTotal": 129216512,
+        "heapUsed": 107291512,
+        "external": 19005364,
+        "arrayBuffers": 8963670
+      },
+      "retained": {
+        "rss": 181968896,
+        "heapTotal": 120393728,
+        "heapUsed": 84440992,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 181809152,
+        "heapTotal": 48828416,
+        "heapUsed": 13578064,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 406.97659999999996,
+      "responseMs": 535.7314,
+      "cpuMs": 624,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 93696768,
+      "retainedOutputHeap": 62412552,
+      "peakRss": 199610368
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 0,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 91316224,
+        "heapTotal": 32313344,
+        "heapUsed": 13592392,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 92028928,
+        "heapTotal": 56954880,
+        "heapUsed": 22021248,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 180654080,
+        "heapTotal": 119869440,
+        "heapUsed": 87340008,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 200376320,
+        "heapTotal": 129740800,
+        "heapUsed": 96872416,
+        "external": 19005364,
+        "arrayBuffers": 8963670
+      },
+      "retained": {
+        "rss": 182956032,
+        "heapTotal": 120393728,
+        "heapUsed": 84433968,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 181436416,
+        "heapTotal": 48828416,
+        "heapUsed": 13570800,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 424.45759999999996,
+      "responseMs": 552.0383999999999,
+      "cpuMs": 656,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 83280024,
+      "retainedOutputHeap": 62412720,
+      "peakRss": 200429568
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 1,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 90824704,
+        "heapTotal": 31789056,
+        "heapUsed": 13591808,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 91561984,
+        "heapTotal": 56954880,
+        "heapUsed": 22020664,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 180490240,
+        "heapTotal": 119607296,
+        "heapUsed": 87393616,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 200032256,
+        "heapTotal": 129478656,
+        "heapUsed": 96933520,
+        "external": 19005364,
+        "arrayBuffers": 8963670
+      },
+      "retained": {
+        "rss": 182587392,
+        "heapTotal": 119869440,
+        "heapUsed": 84433384,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 180699136,
+        "heapTotal": 48566272,
+        "heapUsed": 13570216,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 417.88890000000004,
+      "responseMs": 540.3612,
+      "cpuMs": 625,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 83341712,
+      "retainedOutputHeap": 62412720,
+      "peakRss": 200101888
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 1,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 90943488,
+        "heapTotal": 31789056,
+        "heapUsed": 13595472,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 91832320,
+        "heapTotal": 57217024,
+        "heapUsed": 22029168,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 180506624,
+        "heapTotal": 119869440,
+        "heapUsed": 85890040,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 199987200,
+        "heapTotal": 129740800,
+        "heapUsed": 95304232,
+        "external": 19005364,
+        "arrayBuffers": 8963670
+      },
+      "retained": {
+        "rss": 182439936,
+        "heapTotal": 120131584,
+        "heapUsed": 84441576,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 182456320,
+        "heapTotal": 48566272,
+        "heapUsed": 13578608,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 411.68899999999996,
+      "responseMs": 541.9038,
+      "cpuMs": 688,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 81708760,
+      "retainedOutputHeap": 62412408,
+      "peakRss": 200011776
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 2,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 91045888,
+        "heapTotal": 32051200,
+        "heapUsed": 13595312,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 92073984,
+        "heapTotal": 56954880,
+        "heapUsed": 22029008,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 180273152,
+        "heapTotal": 119869440,
+        "heapUsed": 86304280,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 199811072,
+        "heapTotal": 129740800,
+        "heapUsed": 95853736,
+        "external": 19005364,
+        "arrayBuffers": 8963670
+      },
+      "retained": {
+        "rss": 182173696,
+        "heapTotal": 120131584,
+        "heapUsed": 84441344,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 181272576,
+        "heapTotal": 48828416,
+        "heapUsed": 13578376,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 618.1464,
+      "responseMs": 782.6722999999998,
+      "cpuMs": 859,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 82258424,
+      "retainedOutputHeap": 62412336,
+      "peakRss": 199827456
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 2,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 91017216,
+        "heapTotal": 31789056,
+        "heapUsed": 13596688,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 91668480,
+        "heapTotal": 56954880,
+        "heapUsed": 22030384,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 181755904,
+        "heapTotal": 121180160,
+        "heapUsed": 98476408,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 201310208,
+        "heapTotal": 130789376,
+        "heapUsed": 108549864,
+        "external": 19005364,
+        "arrayBuffers": 8963670
+      },
+      "retained": {
+        "rss": 184311808,
+        "heapTotal": 120131584,
+        "heapUsed": 84443032,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 183685120,
+        "heapTotal": 48566272,
+        "heapUsed": 13579824,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 417.1666,
+      "responseMs": 543.3184999999999,
+      "cpuMs": 672,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 94953176,
+      "retainedOutputHeap": 62412648,
+      "peakRss": 201412608
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 3,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 90980352,
+        "heapTotal": 32051200,
+        "heapUsed": 13597272,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 91914240,
+        "heapTotal": 56954880,
+        "heapUsed": 22030968,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 179838976,
+        "heapTotal": 119345152,
+        "heapUsed": 88643160,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 199467008,
+        "heapTotal": 129216512,
+        "heapUsed": 98354584,
+        "external": 19005364,
+        "arrayBuffers": 8963670
+      },
+      "retained": {
+        "rss": 181870592,
+        "heapTotal": 120393728,
+        "heapUsed": 84443760,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 181915648,
+        "heapTotal": 48828416,
+        "heapUsed": 13580592,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 476.1249,
+      "responseMs": 633.2608,
+      "cpuMs": 672,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 84757312,
+      "retainedOutputHeap": 62412792,
+      "peakRss": 199512064
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 3,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 90894336,
+        "heapTotal": 32051200,
+        "heapUsed": 13592488,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 91783168,
+        "heapTotal": 56954880,
+        "heapUsed": 22021344,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 179519488,
+        "heapTotal": 119083008,
+        "heapUsed": 97365496,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 199024640,
+        "heapTotal": 128954368,
+        "heapUsed": 107565128,
+        "external": 19005364,
+        "arrayBuffers": 8963670
+      },
+      "retained": {
+        "rss": 182321152,
+        "heapTotal": 119869440,
+        "heapUsed": 84433896,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 181071872,
+        "heapTotal": 48566272,
+        "heapUsed": 13570968,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 437.4148,
+      "responseMs": 565.5182,
+      "cpuMs": 704,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 93972640,
+      "retainedOutputHeap": 62412552,
+      "peakRss": 199745536
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 4,
+        "variant": "base"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 91238400,
+        "heapTotal": 31789056,
+        "heapUsed": 13595416,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 92262400,
+        "heapTotal": 56692736,
+        "heapUsed": 22029112,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 179998720,
+        "heapTotal": 119345152,
+        "heapUsed": 87052264,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 199577600,
+        "heapTotal": 128954368,
+        "heapUsed": 96574808,
+        "external": 19005364,
+        "arrayBuffers": 8963670
+      },
+      "retained": {
+        "rss": 181964800,
+        "heapTotal": 120131584,
+        "heapUsed": 84441448,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 180543488,
+        "heapTotal": 48304128,
+        "heapUsed": 13578480,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 572.7878,
+      "responseMs": 736.5826000000001,
+      "cpuMs": 812,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 82979392,
+      "retainedOutputHeap": 62412336,
+      "peakRss": 199622656
+    },
+    {
+      "config": {
+        "width": 100,
+        "rows": 10000,
+        "rep": 4,
+        "variant": "compact"
+      },
+      "versions": {
+        "node": "24.22.1",
+        "acorn": "8.18.0",
+        "ada": "4.0.0",
+        "amaro": "1.1.11",
+        "ares": "1.34.9",
+        "brotli": "1.2.0",
+        "cldr": "48.0",
+        "icu": "78.3",
+        "llhttp": "9.4.3",
+        "merve": "1.2.2",
+        "modules": "137",
+        "napi": "10",
+        "nbytes": "0.1.4",
+        "ncrypto": "0.0.1",
+        "nghttp2": "1.70.0",
+        "nghttp3": "",
+        "ngtcp2": "",
+        "openssl": "3.5.9",
+        "simdjson": "4.6.11",
+        "simdutf": "6.4.0",
+        "sqlite": "3.53.4",
+        "tz": "2026e",
+        "undici": "7.30.1",
+        "unicode": "17.0",
+        "uv": "1.52.1",
+        "uvwasi": "0.0.23",
+        "v8": "13.6.233.17-node.58",
+        "zlib": "1.3.2.1-motley-285e94b",
+        "zstd": "1.5.7"
+      },
+      "idle": {
+        "rss": 90583040,
+        "heapTotal": 31789056,
+        "heapUsed": 13596512,
+        "external": 10185289,
+        "arrayBuffers": 143635
+      },
+      "inputReady": {
+        "rss": 91418624,
+        "heapTotal": 56692736,
+        "heapUsed": 22030208,
+        "external": 10185329,
+        "arrayBuffers": 143635
+      },
+      "executed": {
+        "rss": 178167808,
+        "heapTotal": 117510144,
+        "heapUsed": 96850328,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "serialized": {
+        "rss": 197697536,
+        "heapTotal": 127381504,
+        "heapUsed": 107018456,
+        "external": 19005364,
+        "arrayBuffers": 8963670
+      },
+      "retained": {
+        "rss": 180899840,
+        "heapTotal": 119345152,
+        "heapUsed": 84442856,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "released": {
+        "rss": 179642368,
+        "heapTotal": 48041984,
+        "heapUsed": 13579648,
+        "external": 10185345,
+        "arrayBuffers": 143651
+      },
+      "executionMs": 484.1377000000001,
+      "responseMs": 616.1651,
+      "cpuMs": 657,
+      "bytes": 8820019,
+      "sha256": "01b0caed0cc903278a855c5a3611c025e698aa5fcb2c8d0aadcd4f07b3887879",
+      "addedHeap": 93421944,
+      "retainedOutputHeap": 62412648,
+      "peakRss": 198488064
+    }
+  ],
+  "completedAt": "2026-10-27T01:47:56.747Z"
+}

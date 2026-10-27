@@ -1,0 +1,46 @@
+deno 2.4.1 (stable, release, x86_64-unknown-linux-gnu)
+v8 13.7.152.6-rusty
+typescript 5.8.3
+RUN diagnostics-bun: bun test.js
+diagnostics integration test passed
+EXIT diagnostics-bun: 0
+RUN dev-bun: bun --conditions=development test.js
+EXIT dev-bun: 0
+RUN prod-bun: bun test.js
+EXIT prod-bun: 0
+RUN diagnostics-deno-with-deno-build: deno run test.js
+diagnostics integration test passed
+EXIT diagnostics-deno-with-deno-build: 0
+RUN diagnostics-deno-with-node-build: deno run --conditions=development test.js
+diagnostics integration test passed
+EXIT diagnostics-deno-with-node-build: 0
+RUN dev-deno-with-deno-build: deno run test.js
+EXIT dev-deno-with-deno-build: 0
+RUN dev-deno-with-node-build: deno run --conditions=development test.js
+EXIT dev-deno-with-node-build: 0
+RUN prod-deno-with-deno-build: deno run test.js
+EXIT prod-deno-with-deno-build: 0
+RUN prod-deno-with-node-build: deno run test.js
+EXIT prod-deno-with-node-build: 0
+RUN ts: deno check
+Check file:///tmp/graphql-js-integrationTmp/ts/TypedQueryDocumentNode-test.ts
+Check file:///tmp/graphql-js-integrationTmp/ts/basic-test.ts
+Check file:///tmp/graphql-js-integrationTmp/ts/esm.ts
+Check file:///tmp/graphql-js-integrationTmp/ts/extensions-test.ts
+Check file:///tmp/graphql-js-integrationTmp/ts/internalImports-test.ts
+Check file:///tmp/graphql-js-integrationTmp/ts/kitchenSink-test.ts
+Check file:///tmp/graphql-js-integrationTmp/ts/test.js
+EXIT ts: 0
+RUN node: node index.cjs
+EXIT node: 0
+RUN node: node index.mjs
+EXIT node: 0
+RUN conditions: env MODULE_SYNC=true node check.mjs
+Module identity and path checks passed.
+EXIT conditions: 0
+RUN conditions: env MODULE_SYNC=true bun check.mjs
+Module identity and path checks passed.
+EXIT conditions: 0
+RUN conditions: env MODULE_SYNC=false deno run --allow-read --allow-env check.mjs
+Module identity and path checks passed.
+EXIT conditions: 0

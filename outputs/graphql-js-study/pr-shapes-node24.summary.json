@@ -1,0 +1,232 @@
+{
+  "engine": "node",
+  "versions": {
+    "node": "24.22.1",
+    "acorn": "8.18.0",
+    "ada": "4.0.0",
+    "amaro": "1.1.11",
+    "ares": "1.34.9",
+    "brotli": "1.2.0",
+    "cldr": "48.0",
+    "icu": "78.3",
+    "llhttp": "9.4.3",
+    "merve": "1.2.2",
+    "modules": "137",
+    "napi": "10",
+    "nbytes": "0.1.4",
+    "ncrypto": "0.0.1",
+    "nghttp2": "1.70.0",
+    "nghttp3": "",
+    "ngtcp2": "",
+    "openssl": "3.5.9",
+    "simdjson": "4.6.11",
+    "simdutf": "6.4.0",
+    "sqlite": "3.53.4",
+    "tz": "2026e",
+    "undici": "7.30.1",
+    "unicode": "17.0",
+    "uv": "1.52.1",
+    "uvwasi": "0.0.23",
+    "v8": "13.6.233.17-node.58",
+    "zlib": "1.3.2.1-motley-285e94b",
+    "zstd": "1.5.7"
+  },
+  "rows": [
+    {
+      "width": 1,
+      "rows": 100000,
+      "bytes": 900019,
+      "metrics": {
+        "executionMs": {
+          "base": 74.87649999999996,
+          "compact": 77.80520000000001,
+          "medianPairedReduction": -4.357926447333016,
+          "min": -10.197289762481532,
+          "max": 9.506698638798472
+        },
+        "responseMs": {
+          "base": 99.79700000000003,
+          "compact": 85.85820000000001,
+          "medianPairedReduction": 14.237201519083797,
+          "min": 8.227582115134224,
+          "max": 23.751547048018374
+        },
+        "cpuMs": {
+          "base": 219,
+          "compact": 157,
+          "medianPairedReduction": 18.6046511627907,
+          "min": -33.33333333333333,
+          "max": 42.465753424657535
+        },
+        "addedHeap": {
+          "base": 38302104,
+          "compact": 25074640,
+          "medianPairedReduction": 34.004565388888295,
+          "min": 24.678145511794657,
+          "max": 35.35984524293189
+        },
+        "retainedOutputHeap": {
+          "base": 19308544,
+          "compact": 4108800,
+          "medianPairedReduction": 78.7205128290117,
+          "min": 78.71488640065247,
+          "max": 78.74536785373355
+        },
+        "peakRss": {
+          "base": 134914048,
+          "compact": 120709120,
+          "medianPairedReduction": 10.483332321330984,
+          "min": 10.240009746588697,
+          "max": 10.956953742691834
+        }
+      }
+    },
+    {
+      "width": 8,
+      "rows": 100000,
+      "bytes": 5800019,
+      "metrics": {
+        "executionMs": {
+          "base": 252.6712,
+          "compact": 217.8453,
+          "medianPairedReduction": 13.783090435316725,
+          "min": -8.625620232193022,
+          "max": 21.29580674038816
+        },
+        "responseMs": {
+          "base": 335.65740000000005,
+          "compact": 267.2478,
+          "medianPairedReduction": 19.971983225869828,
+          "min": 3.0202126274468832,
+          "max": 30.141268561856638
+        },
+        "cpuMs": {
+          "base": 391,
+          "compact": 312,
+          "medianPairedReduction": 20.20460358056266,
+          "min": -4.456824512534818,
+          "max": 45.54263565891473
+        },
+        "addedHeap": {
+          "base": 77358608,
+          "compact": 34664280,
+          "medianPairedReduction": 55.117771762470014,
+          "min": 53.7197566946913,
+          "max": 55.57528283606068
+        },
+        "retainedOutputHeap": {
+          "base": 48135728,
+          "compact": 9737312,
+          "medianPairedReduction": 79.77113382392389,
+          "min": 79.76426298391517,
+          "max": 79.80498809532911
+        },
+        "peakRss": {
+          "base": 182984704,
+          "compact": 142630912,
+          "medianPairedReduction": 21.960406250700625,
+          "min": 21.62168231014506,
+          "max": 22.27035234224981
+        }
+      }
+    },
+    {
+      "width": 32,
+      "rows": 31250,
+      "bytes": 8437519,
+      "metrics": {
+        "executionMs": {
+          "base": 335.07539999999995,
+          "compact": 354.3501,
+          "medianPairedReduction": -5.5591368390517815,
+          "min": -8.963845907606927,
+          "max": 37.82041562479193
+        },
+        "responseMs": {
+          "base": 468.98810000000003,
+          "compact": 484.78130000000004,
+          "medianPairedReduction": -2.0410684836066117,
+          "min": -5.468764254396796,
+          "max": 43.818170056478955
+        },
+        "cpuMs": {
+          "base": 625,
+          "compact": 594,
+          "medianPairedReduction": 4.959999999999997,
+          "min": -13.879003558718871,
+          "max": 37.31019522776573
+        },
+        "addedHeap": {
+          "base": 81770752,
+          "compact": 79498304,
+          "medianPairedReduction": 2.7685186696558617,
+          "min": 1.5483793222177855,
+          "max": 2.894499476823442
+        },
+        "retainedOutputHeap": {
+          "base": 51034936,
+          "compact": 51034920,
+          "medianPairedReduction": 0.00003135107291551975,
+          "min": -0.003417325873522614,
+          "max": 0.0028842164234488266
+        },
+        "peakRss": {
+          "base": 187031552,
+          "compact": 187682816,
+          "medianPairedReduction": -0.17976936905335084,
+          "min": -0.5793412188110247,
+          "max": 0.010907742315491298
+        }
+      }
+    },
+    {
+      "width": 100,
+      "rows": 10000,
+      "bytes": 8820019,
+      "metrics": {
+        "executionMs": {
+          "base": 437.4148,
+          "compact": 424.45759999999996,
+          "medianPairedReduction": -1.505966882768317,
+          "min": -8.849746282018799,
+          "max": 32.513301056189924
+        },
+        "responseMs": {
+          "base": 565.5182,
+          "compact": 552.0383999999999,
+          "medianPairedReduction": 0.28466307119455747,
+          "min": -11.9788540846254,
+          "max": 30.581611231162775
+        },
+        "cpuMs": {
+          "base": 704,
+          "compact": 657,
+          "medianPairedReduction": 9.156976744186052,
+          "min": -5.128205128205132,
+          "max": 21.76949941792782
+        },
+        "addedHeap": {
+          "base": 82979392,
+          "compact": 84757312,
+          "medianPairedReduction": -1.9985029756907302,
+          "min": -15.432768320482282,
+          "max": 11.1175062089655
+        },
+        "retainedOutputHeap": {
+          "base": 62412408,
+          "compact": 62412720,
+          "medianPairedReduction": -0.0004999005966954684,
+          "min": -0.0004999011733897163,
+          "max": -0.0002691766233242632
+        },
+        "peakRss": {
+          "base": 199745536,
+          "compact": 200101888,
+          "medianPairedReduction": -0.04505334725890542,
+          "min": -0.79326036157914,
+          "max": 0.5683683519369653
+        }
+      }
+    }
+  ]
+}

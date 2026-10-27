@@ -1,0 +1,31 @@
+
+> graphql@17.0.2 fuzzonly
+> npm run node:test -- "src/**/__tests__/**/*-fuzz.ts"
+
+
+> graphql@17.0.2 node:test
+> node --experimental-strip-types --throw-deprecation --test --experimental-test-isolation=none --test-concurrency=1 --test-reporter=spec src/**/__tests__/**/*-fuzz.ts
+
+▶ printBlockString
+  ✔ correctly print random strings (5839.195881ms)
+✔ printBlockString (5840.46429ms)
+▶ stripIgnoredCharacters
+  ✔ strips documents with random combination of ignored characters (2.295716ms)
+  ✔ strips random leading and trailing ignored tokens (49.221645ms)
+  ✔ strips random ignored tokens between punctuator tokens (157.137601ms)
+  ✔ strips random ignored tokens between punctuator and non-punctuator tokens (77.776545ms)
+  ✔ strips random ignored tokens between non-punctuator and punctuator tokens (74.083018ms)
+  ✔ replace random ignored tokens between non-punctuator tokens and spread with space (7.348351ms)
+  ✔ replace random ignored tokens between non-punctuator tokens with space (36.416955ms)
+  ✔ does not strip random ignored tokens embedded in the string (2.105715ms)
+  ✔ does not strip random ignored tokens embedded in the block string (0.772906ms)
+  ✔ strips ignored characters inside random block strings (7473.339024ms)
+✔ stripIgnoredCharacters (7881.558783ms)
+ℹ tests 11
+ℹ suites 2
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 13851.628883
