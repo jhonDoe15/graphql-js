@@ -2,7 +2,7 @@
 
 Candidate: `29685132862c162b97f2838d1a6ebc8309c2c62c`.
 Base: `6944e23cf7494ba26492c333dd989575b66914c1` on `16.x.x` (package version 16.14.2).
-Companion to [v17 PR #4919](https://github.com/graphql/graphql-js/pull/4919), which is still awaiting maintainer review. This is a candidate for a future 16.x release; no release number or acceptance is promised.
+[Draft backport PR #4922](https://github.com/graphql/graphql-js/pull/4922) is a companion to [v17 PR #4919](https://github.com/graphql/graphql-js/pull/4919), which is still awaiting maintainer review. This is a candidate for a future 16.x release; no release number or acceptance is promised.
 
 The four-file patch ports the same shared constructor and two allocation replacements to `execution/execute.ts` and `jsutils/promiseForObject.ts`. Tests use 16.x's Mocha conventions and Prettier 2 formatting. There are 85 added lines and two deleted lines; no package version, engine requirement, public export, dependency, mutation-serial path or request-setup map changes. All four Linux candidate source files were SHA-256 matched to the committed Windows checkout after validation. Benchmarks use actual npm builds of base and candidate, without source rewriting or executor overlays.
 
